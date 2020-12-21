@@ -275,7 +275,8 @@ nav .dropdown a:hover{
 
 /*-------- BANNER IMAGE SECTION 1 --------*/
 .banner__image__1{   
-    min-height: 40rem;
+    min-height: 37rem;
+    height: 37rem;
     background: url('./assets/images/banner2.jpg');
     background-size: cover;
     background-position: center; 
@@ -288,14 +289,14 @@ nav .dropdown a:hover{
 
 /*-------- SHOP NOW BUTTON --------*/
 .shop__now{
-    grid-area: 5/4/6/6;
+    grid-area: 6/4/7/6;
     background-color: var(--buttonbackground);
     color: var(--light);
     padding-left: 1rem;
     text-align: center;
     font-size: 2rem;
-    padding-top: 1.4rem;
-    padding-bottom: 1.4rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
     padding-right: 1rem;
 }
 
