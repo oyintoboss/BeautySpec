@@ -312,7 +312,7 @@ nav .dropdown a:hover{
     min-height: 40rem;
     height: 40rem;
     width: 100%;
-    background: url('./assets/images/banner1.jpg');
+    background: url('./assets/images/pretty7.jpg');
     background-size: cover;
     background-position: center; 
     display: grid;
@@ -916,7 +916,7 @@ nav .content .links{
 .banner__image__2{
     height: 43rem;
     min-height: 40rem;
-    background: url('./assets/images/banner1.jpg');
+    background: url('./assets/images/pretty7.jpg');
     background-size: cover;
     background-position: center; 
     display: grid;
@@ -933,7 +933,7 @@ nav .content .links{
     color: var(--light);
     padding-left: 1rem;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.4rem;
     padding-top: 1.4rem;
     padding-bottom: 1.4rem;
     padding-right: 1rem;
@@ -1014,7 +1014,7 @@ nav .content .links{
     display: grid;
     grid-template-columns: repeat(8,1fr);
     grid-template-rows: repeat(8,1fr);
-    grid-gap: .5rem; 
+    grid-gap: .1rem; 
 }
 /*--x----- NEW PRODUCT IMAGE 3 -----x--*/
 
@@ -1403,7 +1403,7 @@ nav .content .links{
         min-height: 22rem;
         height: 22rem;
         width: 100%;
-        background: url('./assets/images/banner1.jpg');
+        background: url('./assets/images/pretty7.jpg');
         background-size: cover;
         background-position: center; 
         display: grid;
