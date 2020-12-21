@@ -1,0 +1,1741 @@
+/*-------- CSS VARIABLE LINK --------*/
+@import url("cssvariable.css");
+/*-------- CSS VARIABLE LINK --------*/
+
+/*--------  --------*/
+/*--x-----  -----x--*/
+
+/*-------- UNIVERSAL CLASSES --------*/
+
+.fas{
+    font-size: 2rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: none;
+    /* color: var(--greenapple); */
+}
+
+
+/*--x----- UNIVERSAL CLASSES -----x--*/
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 0;
+    margin: 0;
+    grid-gap: .05rem;
+}
+
+/*-------- ACCOUNT CONTAINER SECTION --------*/
+.account__container{
+    display: grid;
+    grid-area: 1/4/2/5;
+    padding: 0;
+    /* text-decoration: underline; */
+    margin: 0;
+    margin-top: .5rem;
+    /* margin-left: 4rem; */
+    grid-template-columns: repeat(2,1fr);  
+    font-size: 1.2rem;    
+}
+
+.link_register{
+    text-decoration: underline;
+}
+
+.link_register:hover{
+    text-decoration: none;
+}
+
+.link_login{
+    text-decoration: underline;
+}
+
+.link_login:hover{
+    text-decoration: none;
+}
+
+/*--x----- ACCOUNT CONTAINER SECTION -----x--*/
+
+/*-------- LOGO SECTION --------*/
+.logo__container{
+    display: grid;
+    grid-area: 2/1/3/5;
+    grid-template-columns: repeat(3,1fr);
+    margin: 0;
+    padding: 0;
+    /* padding-bottom: -500px; */
+    grid-gap: .1rem;
+}
+
+.logo__box{
+    grid-area: 1/1/2/2;
+    max-width: 70rem;
+    max-height: 10rem;    
+    margin: 0;
+    padding: 0;
+    padding-top: .05rem;
+}
+
+.input__search{
+    grid-area: 1/2/2/3;
+    align-content: space-around;
+}
+
+.search__input{
+    display: inline-block;
+    width: 90%;    
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin-top: 4rem;
+    height: 2rem;
+    }
+
+.search__input::placeholder{
+    /* color: red; */
+    margin: 2rem;
+    padding-left: .6rem;
+    padding-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.icons{
+    grid-area: 1/3/2/4;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: .2rem;
+    align-content: space-around;
+}
+
+.cart{
+    grid-area: 1/2/2/3;
+}
+
+.heart{
+    grid-area: 1/3/2/4;
+}
+
+.whatsapp{
+    grid-area: 1/4/2/5;
+}
+
+/*-------- LUXEBEAUTYHOUSE PICTURE LOGO --------*/
+.luxeBeautyHouseLogo{
+    max-width: 100%; 
+    height: 100%;
+    max-height: 10rem;
+    /* height: 40%; */
+    margin-left: 10rem;
+}
+/*--x----- LUXEBEAUTYHOUSE PICTURE LOGO -----x--*/
+/*--x----- LOGO SECTION -----x--*/
+
+/*-------- NAVIGATION MENU SECTION --------*/
+
+/*-------- NAVIGATION MENU CONTAINER --------*/
+nav{
+    display: grid;
+    grid-area: 3/1/4/5;
+    padding: 0;
+    margin: 0;
+    grid-template-rows: minmax(min-content, 100px) min-content;
+}
+/*--x----- NAVIGATION MENU CONTAINER -----x--*/
+
+/*-------- NAVIGATION MENU CONTENT SECTION --------*/
+nav .content{
+    background-color: var(--greyapple);
+    display: grid;
+    place-items: center;
+    grid-auto-flow: column;
+    align-content: space-evenly;
+}
+/*--x----- NAVIGATION MENU CONTENT SECTION -----x--*/
+
+/*-------- NAVIGATION MENU CONTENT ICON --------*/
+nav .content .menu{
+    font-size: 4rem;
+    display: none;
+}
+
+/*-------- FONT-AWESOME ICON SIZE --------*/
+.fas , .far, .fab {
+    font-size: 1.8rem;
+}
+
+.font__icon{
+    margin-left: 36rem;
+}
+/*--x----- FONT-AWESOME ICON SIZE -----x--*/
+
+/*-------- NAVIGATION MENU CONTENT ICON 2 --------*/
+nav .content .menu2{        
+    display: grid;
+    font-size: 4rem;
+}
+/*--x----- NAVIGATION MENU CONTENT ICON 2 -----x--*/
+
+/*-------- NAVIGATION MENU CONTENT ICON 2 HOVER --------*/
+nav .content .menu2:hover{        
+    filter: opacity(50%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+}
+/*--x----- NAVIGATION MENU CONTENT ICON 2 HOVER -----x--*/
+
+/*-------- NAVIGATION MENU CONTENT ICON HOVER --------*/
+nav .content .menu:hover{
+    filter: opacity(50%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+}
+/*--x----- NAVIGATION MENU CONTENT ICON HOVER -----x--*/
+
+/*-------- NAVIGATION MENU LINK SECTION --------*/
+nav .content .links{
+    display: grid;
+    grid-gap: 15px;
+    grid-auto-flow: column;
+    font-size: 1.5rem;
+    text-decoration: none;
+    place-items: center;
+    grid-auto-columns: minmax(min-content, 195px);
+}
+
+nav .content .links .active{
+    background-color: var(--dark);
+    color: var(--light);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
+}
+
+nav .content .links a:hover{
+    background-color: var(--buttonbackground);
+    color: var(--light);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
+}
+/*--x----- NAVIGATION MENU LINK SECTION -----x--*/
+
+/*-------- NAVIGATION MENU DROPDOWN SECTION --------*/
+nav .dropdown{
+    display: none;  
+    background-color: var(--darkmatter);
+    text-align: center;
+}
+/*-------- NAVIGATION MENU DROPDOWN SECTION --------*/
+
+/*-------- NAVIGATION MENU LINK SECTION --------*/
+nav .dropdown a{
+    color: white;
+    padding: 40px;
+    text-decoration: none;
+}
+/*--x----- NAVIGATION MENU LINK SECTION -----x--*/
+
+/*-------- NAVIGATION MENU LINK SECTION --------*/
+nav .dropdown a:hover{
+    color: var(--greenapple);
+    background-color: var(--greyapple);
+}
+/*--x----- NAVIGATION MENU LINK SECTION -----x--*/
+
+/*--x----- NAVIGATION MENU SECTION -----x--*/
+
+/*-------- BANNER IMAGE SECTION --------*/
+/*-------- BANNER IMAGE CONTAINER --------*/
+.banner__image{
+    grid-area: 4/1/5/5;
+}
+/*-------- BANNER IMAGE CONTAINER --------*/
+
+
+/*-------- BANNER IMAGE SECTION 1 --------*/
+.banner__image__1{   
+    min-height: 40rem;
+    background: url('./assets/images/banner2.jpg');
+    background-size: cover;
+    background-position: center; 
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+    grid-gap: .5rem;  
+}
+/*--x----- BANNER IMAGE SECTION 1 -----x--*/
+
+/*-------- SHOP NOW BUTTON --------*/
+.shop__now{
+    grid-area: 5/4/6/6;
+    background-color: var(--buttonbackground);
+    color: var(--light);
+    padding-left: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    padding-right: 1rem;
+}
+
+.shop__now:hover{
+    background-color: var(--light);
+    color: var(--buttonbackground);
+}
+/*--x----- SHOP NOW BUTTON -----x--*/
+
+/*-------- BANNER IMAGE SECTION 2 --------*/
+.banner__image__2{
+    
+    min-height: 40rem;
+    background: url('./assets/images/banner1.jpg');
+    background-size: cover;
+    background-position: center; 
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+    grid-gap: .5rem;  
+}
+/*--x----- BANNER IMAGE SECTION 2 -----x--*/
+
+/*-------- SHOP CATEGORIES BUTTON --------*/
+.shop__categories{
+    grid-area: 6/4/7/6;
+    background-color: var(--buttonbackground);
+    color: var(--light);
+    padding-left: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    padding-right: 1rem;
+}
+
+.shop__categories:hover{
+    background-color: var(--light);
+    color: var(--buttonbackground);
+}
+/*--x----- SHOP CATEGORIES BUTTON -----x--*/
+
+/*--x----- BANNER IMAGE SECTION -----x--*/
+
+/*-------- NEW PRODUCT SECTION --------*/
+
+/*-------- NEW PRODUCT CONTAINER --------*/
+.newproduct__container{
+    grid-area: 5/1/6/5;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: .3rem;   
+    place-items: center;
+}
+/*--x----- NEW PRODUCT CONTAINER -----x--*/
+
+/*-------- NEW PRODUCT TITLE --------*/
+.newproduct__title{
+    grid-area: 1/1/2/5;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+/*--x----- NEW PRODUCT TITLE -----x--*/
+
+/*-------- NEW PRODUCT IMAGE 1  --------*/
+.product__1{
+    min-height: 20rem;
+    min-width: 20rem;
+    height: 20rem;
+    width: 20rem;
+    background: url('./assets/images/p1.jpg');
+    background-size: cover;
+    background-position: center; 
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+    grid-gap: .5rem; 
+}
+/*--x----- NEW PRODUCT IMAGE 1 -----x--*/
+
+/*-------- NEW PRODUCT IMAGE 2  --------*/
+.product__2{
+    min-height: 20rem;
+    min-width: 20rem;
+    height: 20rem;
+    width: 20rem;
+    background: url('./assets/images/p2.jpg');
+    background-size: cover;
+    background-position: center; 
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+    grid-gap: .5rem; 
+}
+/*--x----- NEW PRODUCT IMAGE 2 -----x--*/
+
+/*-------- NEW PRODUCT IMAGE 3  --------*/
+.product__3{
+    min-height: 20rem;
+    min-width: 20rem;
+    height: 20rem;
+    width: 20rem;
+    background: url('./assets/imageS/p3.jpg');
+    background-size: cover;
+    background-position: center; 
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+    grid-gap: .5rem; 
+}
+/*--x----- NEW PRODUCT IMAGE 3 -----x--*/
+
+/*-------- NEW PRODUCT IMAGE 4  --------*/
+.product__4{
+    min-height: 20rem;
+    min-width: 20rem;
+    height: 20rem;
+    width: 20rem;
+    background: url('./assets/images/p4.jpg');
+    background-size: cover;
+    background-position: center; 
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+    grid-gap: .5rem; 
+}
+/*--x----- NEW PRODUCT IMAGE 4 -----x--*/
+
+
+/*-------- PRODUCT ICON --------*/
+.product__icon{
+    grid-area: 1/7/8/8;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(6,1fr);
+    padding: 0;
+    padding-top: 1rem;
+    margin: 0;    
+}
+/*--x----- PRODUCT ICON -----x--*/
+
+/*-------- HEART ICON --------*/
+.fav__product{
+    grid-area: 1/8/2/9;
+    place-items: center;
+    margin-top: .5rem;
+    margin-right: .5rem;
+}
+/*--x----- HEART ICON -----x--*/
+
+/*-------- SHOPPING CART ICON --------*/
+.cart__product{
+    grid-area: 8/8/9/9;
+    margin-top: 10rem;
+    padding-top: 3.3rem;
+    margin-right: .5rem;
+    border-radius: 2rem;
+    /* visibility: hidden; */
+}
+
+.cart__product:hover{
+    grid-area: 8/8/9/9;
+    margin-top: 10rem;
+    padding-top: 3.3rem;
+    margin-right: .5rem;
+    border-radius: 2rem;
+    /* visibility: visible; */
+}
+/*--x----- SHOPPING CART ICON -----x--*/
+
+/*--x----- NEW PRODUCT SECTION -----x--*/
+
+/*-------- PRODUCT CATEGORY SECTION --------*/
+
+/*-------- PRODUCT CATEGORY CONTAINER --------*/
+.prod__category__container{
+    grid-area: 6/1/7/6;
+    display: grid;
+    grid-template-rows: minmax(min-content, 1rem) min-content;
+    grid-gap: .2rem;   
+    place-items: center; 
+   
+}
+/*--x----- PRODUCT CATEGORY CONTAINER -----x--*/
+
+/*-------- PRODUCT TITLE --------*/
+.prod__category__title{
+    grid-area: 1/1/2/5;
+    text-align: center;
+    padding: 0;
+    height: 4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+/*--x----- PRODUCT TITLE -----x--*/
+
+/*-------- IMAGES GRID CONTAINER --------*/
+.images__grid__container{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    width: 80%;
+}
+/*--x----- IMAGES GRID CONTAINER -----x--*/
+
+/*-------- EYES SECTION --------*/
+/* background-size: cover; */
+ 
+.eyes{
+     
+    min-height: 20rem;
+    min-width: 50rem; 
+    width: 100%;
+    background: url('./assets/images/eyes1.jpg');
+    
+    background-position: center; 
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: .5rem;
+} 
+/*--x----- EYES SECTION -----x--*/
+
+/*-------- LIPS SECTION --------*/
+/* background-size: cover; */
+.lips{
+    
+    min-height: 20rem;
+    min-width: 50rem; 
+    width: 100%;
+    background: url('./assets/images/lips1.jpg');
+    
+    background-position: center; 
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: .5rem;
+} 
+/*--x----- LIPS SECTION -----x--*/
+
+/*-------- POWDER SECTION --------*/
+/* background-size: cover; */
+.powder{
+   
+    min-height: 20rem;
+    min-width: 50rem; 
+    width: 100%;   
+    background: url('./assets/images/powder.jpg');
+    background-position: center; 
+    margin-bottom: 1rem;
+     display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: .5rem;
+} 
+/*--x----- POWDER SECTION -----x--*/
+/*-------- MAKEUP SECTION --------*/
+ /* background-size: cover; */ 
+.tools{
+   
+    min-height: 20rem;
+    min-width: 50rem; 
+    width: 100%;
+    background: url('./assets/images/makeup__tools.jpg');
+   
+    background-position: center; 
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: .5rem;
+} 
+/*--x----- MAKEUP SECTION -----x--*/
+
+/*-------- MAKEUP SECTION --------*/
+
+/*--x----- MAKEUP SECTION -----x--*/
+
+/*-------- LEFT SIDE SECTION --------*/
+.left__side{
+    grid-area: 3/1/4/2;
+    background-color: var(--darkermatter);
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-right: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--light);
+}
+/*--x----- LEFT SIDE SECTION -----x--*/
+
+/*-------- RIGHT SIDE SECTION --------*/
+.right__side{
+    grid-area: 3/8/4/9;
+    background-color: var(--darkermatter);
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-right: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--light);
+}
+/*--x----- RIGHT SIDE SECTION -----x--*/
+
+/*--x----- PRODUCT CATEGORY SECTION -----x--*/
+
+/*-------- FOOTER SECTION --------*/
+
+/*-------- FOOTER CONTAINER --------*/
+.footer__container{
+    grid-area: 7/1/8/5;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-content: center;
+    place-items: center;
+    padding-bottom: 5rem;
+}
+/*--x----- FOOTER CONTAINER -----x--*/
+
+/*-------- FOOTER COLUMN 1 --------*/
+.column__1{
+    grid-area: 1/1/2/2;
+    display: grid;
+    padding-top: 6rem;
+}
+
+.info__1{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: .5rem;
+    padding-top: 3rem; 
+}
+
+.info__1 a{
+    text-decoration: underline;
+}
+
+.info__1 a:hover{
+    text-decoration: none;
+}
+
+.icon__info__1{
+    display: inline-block;
+    grid-template-rows: repeat(3,1fr);
+   
+}
+/*--x----- FOOTER COLUMN 1 -----x--*/
+
+/*-------- FOOTER COLUMN 2 --------*/
+.column__2{
+    grid-area: 1/2/2/3;
+    display: grid;
+}
+
+.info__2{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: .5rem;
+    padding-top: 3rem;
+}
+
+.delivery{
+    text-decoration: underline;
+}
+
+.delivery:hover{
+    text-decoration: none;
+}
+
+.order{
+    text-decoration: underline;
+}
+
+.order:hover{
+    text-decoration: none;
+}
+/*--x----- FOOTER COLUMN 2 -----x--*/
+
+/*-------- FOOTER COLUMN 3 --------*/
+.column__3{
+    padding-top: 7rem;
+    grid-area: 1/3/2/5;
+    display: grid;
+}
+
+.info__3{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: .5rem;
+    padding-top: 3rem;
+}
+
+.input__email{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 3rem;
+    width: 100%;
+}
+
+.subscribe__btn{
+    display: grid;
+    height: 2.5rem;
+    width: 30%;
+    padding-top: .4rem;
+    padding-bottom: .9rem;
+    font-size: 1rem;
+}
+
+.subscribe__btn:hover{
+    height: 2.5rem;
+    width: 30%;
+    padding-top: .4rem;
+    padding-bottom: .9rem;
+   background-color: var(--buttonbackground);
+   color: var(--light);
+   border: var(--dark);
+   font-size: 1.2rem;
+}
+/*--x----- FOOTER COLUMN 3 -----x--*/
+
+
+
+/*--x----- FOOTER SECTION -----x--*/
+
+/*-------- MEDIA QUERIES FOR 700PX --------*/
+
+@media only screen and (max-width: 700px){
+/*-------- WRAPPER CONTAINER SECTION --------*/
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 0;
+        margin: 0;
+        grid-gap: .05rem;
+    }
+/*--x----- WRAPPER CONTAINER SECTION -----x--*/
+
+/*-------- ACCOUNT CONTAINER SECTION --------*/
+.account__container{
+    display: grid;
+    grid-area: 1/2/2/4;
+    padding: 0;
+    /* text-decoration: underline; */
+    margin: 0;
+    margin-top: .5rem;
+    /* margin-left: 4rem; */
+    grid-template-columns: repeat(2,1fr);  
+    font-size: 1.2rem;    
+}
+/*--x----- ACCOUNT CONTAINER SECTION -----x--*/
+    
+/*-------- LOGO SECTION --------*/
+.logo__container{
+    display: grid;
+    grid-area: 2/1/3/5;
+    grid-template-columns: repeat(3,1fr);
+    margin: 0;
+    padding: 0;
+    grid-gap: .1rem;
+}
+
+.logo__box{
+    grid-area: 1/1/2/2;
+    max-width: 8rem;
+    max-height: 6rem;    
+    margin: 0;
+    place-items: center;
+    align-content: center;
+    margin-right: 2rem;
+    padding: 0;
+    /* padding-top: .05rem; */
+}
+
+/*-------- LUXEBEAUTYHOUSE PICTURE LOGO --------*/
+.luxeBeautyHouseLogo{
+    max-width: 50%; 
+    height: 70%;
+    max-height: 7rem;
+    padding-right: 5rem;
+    /* height: 40%; */
+    /* margin-left: 10rem; */
+}
+/*--x----- LUXEBEAUTYHOUSE PICTURE LOGO -----x--*/
+
+
+.input__search{
+    grid-area: 1/2/2/3;
+    align-content: space-around;
+    place-items: center;
+    align-content: center;
+    margin-bottom: 3rem;
+}
+
+.search__input{
+    display: inline-block;
+    width: 82%;    
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin-top: 4rem;
+    height: 2rem;
+    /* padding-bottom: ; */
+    }
+
+.search__input::placeholder{
+    /* color: red; */
+    margin: 2rem;
+    padding-left: .6rem;
+    padding-bottom: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.icons{
+    grid-area: 1/3/2/4;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: .2rem;
+    align-content: space-around;
+}
+
+.cart{
+    grid-area: 1/2/2/3;
+}
+
+.heart{
+    grid-area: 1/3/2/4;
+}
+
+.whatsapp{
+    grid-area: 1/4/2/5;
+}
+
+/*--x----- LOGO SECTION -----x--*/
+
+/*-------- NAVIGATION MENU SECTION --------*/
+nav .content .menu{
+    font-size: 4rem;
+    display: initial;
+}
+
+nav .content .menu2{        
+    display: none;
+}
+
+nav .content .links{
+    display: none;       
+}
+
+/*-------- NAVIGATION MENU SECTION --------*/
+
+/*-------- BANNER IMAGE SECTION --------*/
+/*-------- BANNER IMAGE CONTAINER --------*/
+.banner__image{
+    grid-area: 4/1/5/5;
+}
+/*-------- BANNER IMAGE CONTAINER --------*/
+
+
+/*-------- BANNER IMAGE SECTION 1 --------*/
+.banner__image__1{   
+    min-height: 30rem;
+    height: 43rem;
+    width: 100%;
+    background: url('./assets/images/banner2.jpg');
+    background-size: cover;
+    background-position: center; 
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+    grid-gap: .5rem;  
+}
+/*--x----- BANNER IMAGE SECTION 1 -----x--*/
+
+/*-------- SHOP NOW BUTTON --------*/
+.shop__now{
+    grid-area: 5/3/6/7;
+    background-color: var(--buttonbackground);
+    color: var(--light);
+    padding-left: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    padding-right: 1rem;
+}
+
+/*--x----- SHOP NOW BUTTON -----x--*/
+
+/*-------- BANNER IMAGE SECTION 2 --------*/
+.banner__image__2{
+    height: 43rem;
+    min-height: 40rem;
+    background: url('./assets/images/banner1.jpg');
+    background-size: cover;
+    background-position: center; 
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+    grid-gap: .5rem;  
+}
+/*--x----- BANNER IMAGE SECTION 2 -----x--*/
+
+/*-------- SHOP CATEGORIES BUTTON --------*/
+.shop__categories{
+    grid-area: 6/2/7/8;
+    background-color: var(--buttonbackground);
+    color: var(--light);
+    padding-left: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    padding-right: 1rem;
+}
+
+/*--x----- SHOP CATEGORIES BUTTON -----x--*/
+
+/*--x----- BANNER IMAGE SECTION -----x--*/
+
+/*-------- NEW PRODUCT SECTION --------*/
+
+/*-------- NEW PRODUCT CONTAINER --------*/
+.newproduct__container{
+    grid-area: 5/1/6/4;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);    
+    grid-gap: .8rem;   
+    grid-row-gap: .8rem;
+    place-items: center;
+}
+/*--x----- NEW PRODUCT CONTAINER -----x--*/
+
+/*-------- NEW PRODUCT TITLE --------*/
+.newproduct__title{
+    grid-area: 1/1/2/3;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+/*--x----- NEW PRODUCT TITLE -----x--*/
+
+/*-------- NEW PRODUCT IMAGE 1  --------*/
+.product__1{
+    grid-area: 2/1/3/2;
+    min-height: 20rem;
+    min-width: 17rem;
+    height: 20rem;
+    width: 15rem;
+    background: url('./assets/images/p1.jpg');
+    background-size: cover;
+    background-position: center; 
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+    grid-gap: .5rem; 
+    margin-bottom: 2.5rem;
+}
+/*--x----- NEW PRODUCT IMAGE 1 -----x--*/
+
+/*-------- NEW PRODUCT IMAGE 2  --------*/
+.product__2{
+    grid-area: 2/2/3/3;
+    min-height: 20rem;
+    min-width: 17rem;
+    height: 20rem;
+    width: 15rem;
+    background: url('./assets/images/p2.jpg');
+    background-size: cover;
+    background-position: center; 
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+    grid-gap: .5rem; 
+    margin-bottom: 2.5rem;
+}
+/*--x----- NEW PRODUCT IMAGE 2 -----x--*/
+
+/*-------- NEW PRODUCT IMAGE 3  --------*/
+.product__3{
+    grid-area: 3/1/4/2;
+    min-height: 20rem;
+    min-width: 17rem;
+    height: 20rem;
+    width: 15rem;
+    background: url('./assets/imageS/p3.jpg');
+    background-size: cover;
+    background-position: center; 
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+    grid-gap: .5rem; 
+}
+/*--x----- NEW PRODUCT IMAGE 3 -----x--*/
+
+/*-------- NEW PRODUCT IMAGE 4  --------*/
+.product__4{
+    grid-area: 3/2/4/3;
+    min-height: 20rem;
+    min-width: 17rem;
+    height: 20rem;
+    width: 15rem;
+    background: url('./assets/images/p4.jpg');
+    background-size: cover;
+    background-position: center; 
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+    grid-gap: .5rem; 
+}
+/*--x----- NEW PRODUCT IMAGE 4 -----x--*/
+
+/*-------- PRODUCT CATEGORY SECTION --------*/
+
+/*-------- PRODUCT CATEGORY CONTAINER --------*/
+.prod__category__container{
+    grid-area: 6/1/7/4;
+    display: grid;
+    grid-template-rows: minmax(min-content, .5rem) min-content;
+    grid-gap: .2rem;   
+    place-items: center; 
+   
+}
+/*--x----- PRODUCT CATEGORY CONTAINER -----x--*/
+
+/*-------- PRODUCT TITLE --------*/
+.prod__category__title{
+    grid-area: 1/1/2/3;
+    text-align: center;
+    padding: 0;
+    height: 4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    /* margin-left: 3rem;
+    margin-right: 3rem; */
+    /* padding-left: 3rem;
+    padding-right: 3rem; */
+}
+/*--x----- PRODUCT TITLE -----x--*/
+
+/*-------- IMAGES GRID CONTAINER --------*/
+.images__grid__container{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    width: 80%;
+}
+/*--x----- IMAGES GRID CONTAINER -----x--*/
+
+/*-------- EYES SECTION --------*/
+/* background-size: cover; */
+ 
+.eyes{    
+    min-height: 10rem;
+    min-width: 15rem; 
+    width: 33rem;
+    height: 10rem;
+    background: url('./assets/images/eyes1.jpg');  
+    background-position: center; 
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: .5rem;
+} 
+/*--x----- EYES SECTION -----x--*/
+
+/*-------- LIPS SECTION --------*/
+/* background-size: cover; */
+.lips{
+    
+    min-height: 10rem;
+    min-width: 15rem; 
+    width: 33rem;
+    height: 10rem;
+    background: url('./assets/images/lips1.jpg');
+    
+    background-position: center; 
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: .5rem;
+} 
+/*--x----- LIPS SECTION -----x--*/
+
+/*-------- POWDER SECTION --------*/
+/* background-size: cover; */
+.powder{
+   
+    min-height: 10rem;
+    min-width: 15rem; 
+    width: 33rem;
+    height: 10rem;  
+    background: url('./assets/images/powder.jpg');
+    background-position: center; 
+    margin-bottom: 1rem;
+     display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: .5rem;
+} 
+/*--x----- POWDER SECTION -----x--*/
+/*-------- MAKEUP SECTION --------*/
+ /* background-size: cover; */ 
+.tools{
+    min-height: 10rem;
+    min-width: 15rem; 
+    width: 33rem;
+    height: 10rem;
+    background: url('./assets/images/makeup__tools.jpg');
+    background-position: center; 
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: .5rem;
+} 
+/*--x----- MAKEUP SECTION -----x--*/
+
+/*-------- MAKEUP SECTION --------*/
+
+/*--x----- MAKEUP SECTION -----x--*/
+
+/*--x----- PRODUCT CATEGORY SECTION -----x--*/
+
+/*-------- FOOTER SECTION --------*/
+
+/*-------- FOOTER CONTAINER --------*/
+.footer__container{
+    grid-area: 7/1/8/4;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-content: center;
+    place-items: center;
+    padding-bottom: 5rem;
+}
+/*--x----- FOOTER CONTAINER -----x--*/
+
+/*-------- FOOTER COLUMN 1 --------*/
+.column__1{
+    grid-area: 1/1/2/2;
+    display: grid;
+    padding-top: 6rem;
+}
+
+.info__1{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: .5rem;
+    padding-top: 3rem; 
+}
+
+.icon__info__1{
+    display: inline-block;
+    grid-template-rows: repeat(3,1fr);
+   
+}
+/*--x----- FOOTER COLUMN 1 -----x--*/
+
+/*-------- FOOTER COLUMN 2 --------*/
+.column__2{
+    grid-area: 1/2/2/3;
+    display: grid;
+}
+
+.info__2{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: .5rem;
+    padding-top: 3rem;
+}
+
+/*--x----- FOOTER COLUMN 2 -----x--*/
+
+/*-------- FOOTER COLUMN 3 --------*/
+.column__3{
+    padding-top: 7rem;
+    grid-area: 2/1/3/3;
+    display: grid;
+    margin-left: 3rem;
+}
+
+.info__3{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: .5rem;
+    padding-top: 3rem;
+}
+
+.input__email{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 3rem;
+    width: 92%;
+}
+/*--x----- FOOTER COLUMN 3 -----x--*/
+
+/*--x----- FOOTER SECTION -----x--*/
+
+}
+
+/*--x----- MEDIA QUERIES FOR 700PX -----x--*/
+
+/*-------- MEDIA QUERIES FOR 500PX --------*/
+
+@media only screen and (max-width: 500px){
+    /*-------- WRAPPER CONTAINER SECTION --------*/
+        .wrapper{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            padding: 0;
+            margin: 0;
+            grid-gap: .05rem;
+        }
+    /*--x----- WRAPPER CONTAINER SECTION -----x--*/
+    
+    /*-------- ACCOUNT CONTAINER SECTION --------*/
+    .account__container{
+        display: grid;
+        grid-area: 1/1/2/2;
+        padding: 0;
+        margin: 0;
+        margin-top: .5rem;
+        grid-template-columns: repeat(2,1fr);  
+        font-size: 1.2rem; 
+        place-items: center;   
+    }
+    /*--x----- ACCOUNT CONTAINER SECTION -----x--*/
+        
+    /*-------- LOGO SECTION --------*/
+    .logo__container{
+        display: grid;
+        grid-area: 2/1/3/2;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        margin: 0;
+        padding: 0;
+        grid-gap: .1rem;
+    }
+    
+    .logo__box{
+        grid-area: 1/1/2/2;
+        max-width: 8rem;
+        max-height: 6rem; 
+        height: 4rem;   
+        margin: 0;
+        place-items: center;
+        align-content: center;    
+        padding: 0;
+        /* padding-top: .05rem; */
+    }
+    
+    /*-------- LUXEBEAUTYHOUSE PICTURE LOGO --------*/
+    .luxeBeautyHouseLogo{
+        max-width: 30%; 
+        height: 30%;
+        max-height: 5rem;
+        height: 4rem;
+        padding-right: 5rem;
+        /* height: 40%; */
+        /* margin-left: 10rem; */
+    }
+    /*--x----- LUXEBEAUTYHOUSE PICTURE LOGO -----x--*/
+    
+    
+    .input__search{
+        grid-area: 2/1/3/2;
+        place-items: center;
+        margin-left: 3rem;
+        align-content: center;
+    }
+    
+    .search__input{
+        display: inline-block;
+        width: 82%;    
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        margin-top: 4rem;
+        height: 2rem;
+    }
+    
+    
+    .icons{
+        grid-area: 3/1/4/2;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: .2rem;
+        align-content: space-around;
+    }
+    
+    .cart{
+        grid-area: 1/2/2/3;
+    }
+    
+    .heart{
+        grid-area: 1/3/2/4;
+    }
+    
+    .whatsapp{
+        grid-area: 1/4/2/5;
+    }
+    
+    /*--x----- LOGO SECTION -----x--*/
+    
+    /*-------- NAVIGATION MENU SECTION --------*/
+    nav .content .menu{
+        font-size: 4rem;
+        display: initial;
+    }
+    
+    nav .content .menu2{        
+        display: none;
+    }
+    
+    nav .content .links{
+        display: none;       
+    }
+    
+    /*-------- NAVIGATION MENU SECTION --------*/
+    
+    /*-------- BANNER IMAGE SECTION --------*/
+    /*-------- BANNER IMAGE CONTAINER --------*/
+    .banner__image{
+        grid-area: 4/1/5/2;
+    }
+    /*-------- BANNER IMAGE CONTAINER --------*/
+    
+    
+    /*-------- BANNER IMAGE SECTION 1 --------*/
+    .banner__image__1{   
+        min-height: 18rem;
+        height: 18rem;
+        width: 100%;
+        background: url('./assets/images/banner2.jpg');
+        background-size: cover;
+        background-position: center; 
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(8,1fr);
+        grid-gap: .5rem;  
+    }
+    /*--x----- BANNER IMAGE SECTION 1 -----x--*/
+    
+    /*-------- SHOP NOW BUTTON --------*/
+    .shop__now{
+        grid-area: 7/3/8/7;
+        background-color: var(--buttonbackground);
+        color: var(--light);
+        padding-left: 1rem;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-right: 1rem;
+    }
+    
+    /*--x----- SHOP NOW BUTTON -----x--*/
+    
+    /*-------- BANNER IMAGE SECTION 2 --------*/
+    .banner__image__2{
+        min-height: 22rem;
+        height: 22rem;
+        width: 100%;
+        background: url('./assets/images/banner1.jpg');
+        background-size: cover;
+        background-position: center; 
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(8,1fr);
+        grid-gap: .5rem;  
+    }
+    /*--x----- BANNER IMAGE SECTION 2 -----x--*/
+    
+    /*-------- SHOP CATEGORIES BUTTON --------*/
+    .shop__categories{
+        grid-area: 6/2/7/8;
+        background-color: var(--buttonbackground);
+        color: var(--light);
+        padding-left: 1rem;
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-right: 1rem;
+    }
+    
+    /*--x----- SHOP CATEGORIES BUTTON -----x--*/
+    
+    /*--x----- BANNER IMAGE SECTION -----x--*/
+    
+    /*-------- NEW PRODUCT SECTION --------*/
+    
+    /*-------- NEW PRODUCT CONTAINER --------*/
+    .newproduct__container{
+        grid-area: 5/1/6/2;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);    
+        grid-gap: .8rem;   
+        grid-row-gap: .8rem;
+        place-items: center;
+    }
+    /*--x----- NEW PRODUCT CONTAINER -----x--*/
+    
+    /*-------- NEW PRODUCT TITLE --------*/
+    .newproduct__title{
+        grid-area: 1/1/2/3;
+        text-align: center;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    /*--x----- NEW PRODUCT TITLE -----x--*/
+    
+    /*-------- NEW PRODUCT IMAGE 1  --------*/
+    .product__1{
+        grid-area: 2/1/3/2;
+        min-height: 20rem;
+        min-width: 17rem;
+        height: 20rem;
+        width: 15rem;
+        background: url('./assets/images/p1.jpg');
+        background-size: cover;
+        background-position: center; 
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(8,1fr);
+        grid-gap: .5rem; 
+        margin-bottom: 2.5rem;
+    }
+    /*--x----- NEW PRODUCT IMAGE 1 -----x--*/
+    
+    /*-------- NEW PRODUCT IMAGE 2  --------*/
+    .product__2{
+        grid-area: 3/1/4/2;
+        min-height: 20rem;
+        min-width: 17rem;
+        height: 20rem;
+        width: 15rem;
+        background: url('./assets/images/p2.jpg');
+        background-size: cover;
+        background-position: center; 
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(8,1fr);
+        grid-gap: .5rem; 
+        margin-bottom: 2.5rem;
+    }
+    /*--x----- NEW PRODUCT IMAGE 2 -----x--*/
+    
+    /*-------- NEW PRODUCT IMAGE 3  --------*/
+    .product__3{
+        grid-area: 4/1/5/2;
+        min-height: 20rem;
+        min-width: 17rem;
+        height: 20rem;
+        width: 15rem;
+        background: url('./assets/imageS/p3.jpg');
+        background-size: cover;
+        background-position: center; 
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(8,1fr);
+        grid-gap: .5rem; 
+        margin-bottom: 2.5rem;
+    }
+    /*--x----- NEW PRODUCT IMAGE 3 -----x--*/
+    
+    /*-------- NEW PRODUCT IMAGE 4  --------*/
+    .product__4{
+        grid-area: 5/1/6/2;
+        min-height: 20rem;
+        min-width: 17rem;
+        height: 20rem;
+        width: 15rem;
+        background: url('./assets/images/p4.jpg');
+        background-size: cover;
+        background-position: center; 
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(8,1fr);
+        grid-gap: .5rem; 
+        margin-bottom: 2.5rem;
+    }
+    /*--x----- NEW PRODUCT IMAGE 4 -----x--*/
+    
+    /*-------- PRODUCT CATEGORY SECTION --------*/
+    
+    /*-------- PRODUCT CATEGORY CONTAINER --------*/
+    .prod__category__container{
+        grid-area: 6/1/7/2;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: .2rem;   
+        place-items: center;     
+    }
+    /*--x----- PRODUCT CATEGORY CONTAINER -----x--*/
+    
+    /*-------- PRODUCT TITLE --------*/
+    .prod__category__title{
+        grid-area: 1/1/2/2;
+        text-align: center;
+        padding: 0;
+        height: 4rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        /* margin-left: 3rem;
+        margin-right: 3rem; */
+        /* padding-left: 3rem;
+        padding-right: 3rem; */
+    }
+    /*--x----- PRODUCT TITLE -----x--*/
+    
+    /*-------- IMAGES GRID CONTAINER --------*/
+    .images__grid__container{
+        display: grid;
+        grid-template-rows: repeat(4,1fr);
+        padding: 0;
+        margin: 0;
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+    /*--x----- IMAGES GRID CONTAINER -----x--*/
+    
+    /*-------- EYES SECTION --------*/
+    /* background-size: cover; */
+     
+    .eyes{    
+        min-height: 10rem;
+        height: 10rem;  
+        width: 100%;
+        background: url('./assets/images/eyes1.jpg');  
+        background-position: center; 
+        margin-bottom: 1rem;
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-gap: .5rem;
+    } 
+    /*--x----- EYES SECTION -----x--*/
+    
+    /*-------- LIPS SECTION --------*/
+    /* background-size: cover; */
+    .lips{
+        min-height: 10rem;
+        width: 100%;
+        height: 10rem;
+        background: url('./assets/images/lips1.jpg');
+        background-position: center; 
+        margin-bottom: 1rem;
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-gap: .5rem;
+    } 
+    /*--x----- LIPS SECTION -----x--*/
+    
+    /*-------- POWDER SECTION --------*/
+    /* background-size: cover; */
+    .powder{
+        min-height: 10rem;
+        width: 100%;
+        height: 10rem;  
+        background: url('./assets/images/powder.jpg');
+        background-position: center; 
+        margin-bottom: 1rem;
+         display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-gap: .5rem;
+    } 
+    /*--x----- POWDER SECTION -----x--*/
+    /*-------- MAKEUP SECTION --------*/
+     /* background-size: cover; */ 
+    .tools{
+        min-height: 10rem;
+        width: 100%;
+        height: 10rem;
+        background: url('./assets/images/makeup__tools.jpg');
+        background-position: center; 
+        margin-bottom: 1rem;
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-gap: .5rem;
+    } 
+    /*--x----- MAKEUP SECTION -----x--*/
+    
+    /*-------- LEFT SIDE SECTION --------*/
+.left__side{
+    grid-area: 3/1/4/2;
+    background-color: var(--darkermatter);
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--light);
+}
+/*--x----- LEFT SIDE SECTION -----x--*/
+
+/*-------- RIGHT SIDE SECTION --------*/
+.right__side{
+    grid-area: 3/8/4/9;
+    background-color: var(--darkermatter);
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--light);
+}
+/*--x----- RIGHT SIDE SECTION -----x--*/
+
+    /*--x----- PRODUCT CATEGORY SECTION -----x--*/
+    
+    /*-------- FOOTER SECTION --------*/
+    
+    /*-------- FOOTER CONTAINER --------*/
+    .footer__container{
+        grid-area: 7/1/8/2;
+        display: grid;
+        /* grid-template-rows: repeat(3,1fr); */
+        align-content: center;
+        grid-gap: 1rem;
+        place-items: center;
+        padding: 0;
+        margin: 0;
+        margin-left: .5rem;
+        margin-right: .5rem;  
+        margin-bottom: 2rem;   
+    }
+    /*--x----- FOOTER CONTAINER -----x--*/
+    
+    /*-------- FOOTER COLUMN 1 --------*/
+    .column__1{
+        grid-area: 1/1/2/2;
+        display: grid;
+        margin-left: 3rem;
+        margin-bottom: 3rem;
+    }
+    
+    .info__1{
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        grid-gap: .5rem;
+        padding-top: 3rem; 
+    }
+    
+    .icon__info__1{
+        display: inline-block;
+        grid-template-rows: repeat(3,1fr);
+       
+    }
+    /*--x----- FOOTER COLUMN 1 -----x--*/
+    
+    /*-------- FOOTER COLUMN 2 --------*/
+    .column__2{
+        grid-area: 2/1/2/2;
+        display: grid;
+        margin-bottom: 3rem;
+    }
+    
+    .info__2{
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        grid-gap: .5rem;
+        padding-top: 3rem;
+    }
+    
+    .order{
+        text-decoration: underline;
+    }
+    
+    .order:hover{
+        text-decoration: none;
+    }
+    /*--x----- FOOTER COLUMN 2 -----x--*/
+    
+    /*-------- FOOTER COLUMN 3 --------*/
+    .column__3{
+        padding-top: 7rem;
+        grid-area: 3/1/4/2;
+        display: grid;
+        margin-left: 3rem;
+        margin-top: -5rem;
+    }
+    
+    .info__3{
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        grid-gap: .5rem;
+        padding-top: 3rem;
+    }
+    
+    .input__email{
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        height: 3rem;
+        width: 92%;
+    }
+
+    .subscribe__btn{
+        display: grid;
+        height: 2.5rem;
+        width: 80%;
+        padding-top: .4rem;
+        padding-bottom: .9rem;
+        font-size: 1rem;
+    }
+
+    
+    .subscribe__btn:hover{
+        height: 2.5rem;
+     width: 80%;
+    padding-top: .6rem;
+    padding-bottom: .9rem;
+   background-color: var(--buttonbackground);
+   color: var(--light);
+   border: var(--dark);
+   font-size: 1rem;
+    }
+    /*--x----- FOOTER COLUMN 3 -----x--*/
+    
+    /*--x----- FOOTER SECTION -----x--*/
+    
+    }
+
+/*--x----- MEDIA QUERIES FOR 500PX -----x--*/

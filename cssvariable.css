@@ -1,0 +1,13 @@
+/*-------- GLOBAL CSS VARIABLE --------*/
+:root{
+    --primary: #ddd;  
+    --greyapple: #ecf0f1;
+    --greenapple: #2ecc71;
+    --darkmatter: #34495e;
+    --darkermatter: #2c3e50;
+    --dark: #333;
+    --light: #fff;
+    --buttonbackground: #696969;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+/*-------- GLOBAL CSS VARIABLE --------*/
