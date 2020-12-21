@@ -277,6 +277,7 @@ nav .dropdown a:hover{
 .banner__image__1{   
     min-height: 37rem;
     height: 37rem;
+    width: 100%;
     background: url('./assets/images/banner2.jpg');
     background-size: cover;
     background-position: center; 
@@ -308,8 +309,9 @@ nav .dropdown a:hover{
 
 /*-------- BANNER IMAGE SECTION 2 --------*/
 .banner__image__2{
-    
     min-height: 40rem;
+    height: 40rem;
+    width: 100%;
     background: url('./assets/images/banner1.jpg');
     background-size: cover;
     background-position: center; 
@@ -400,15 +402,31 @@ nav .dropdown a:hover{
     min-width: 20rem;
     height: 20rem;
     width: 20rem;
+    padding: 0;
+    margin: 0;
     background: url('./assets/imageS/p3.jpg');
     background-size: cover;
     background-position: center; 
     display: grid;
     grid-template-columns: repeat(8,1fr);
     grid-template-rows: repeat(8,1fr);
-    grid-gap: .5rem; 
+    grid-gap: .2rem; 
 }
 /*--x----- NEW PRODUCT IMAGE 3 -----x--*/
+
+/*-------- SOLD OUT SECTION --------*/
+.sold__out{
+    grid-area: 2/1/3/5;
+    background-color: var(--darkermatter);
+    padding-left: .5rem;
+    padding-top: .5rem;
+    padding-right: .5rem;
+    padding-bottom: .5rem;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--light);
+}
+/*--x----- SOLD OUT SECTION -----x--*/
 
 /*-------- NEW PRODUCT IMAGE 4  --------*/
 .product__4{
@@ -999,6 +1017,20 @@ nav .content .links{
     grid-gap: .5rem; 
 }
 /*--x----- NEW PRODUCT IMAGE 3 -----x--*/
+
+/*-------- SOLD OUT SECTION --------*/
+.sold__out{
+    grid-area: 2/1/3/5;
+    background-color: var(--darkermatter);
+    padding-left: .1rem;
+    padding-top: .5rem;
+    padding-right: .1rem;
+    padding-bottom: .5rem;
+    text-align: center;
+    font-size: .8rem;
+    color: var(--light);
+}
+/*--x----- SOLD OUT SECTION -----x--*/
 
 /*-------- NEW PRODUCT IMAGE 4  --------*/
 .product__4{
