@@ -743,7 +743,36 @@ nav .dropdown a:hover{
 }
 /*--x----- FOOTER COLUMN 3 -----x--*/
 
+/*-------- PRODUCT CATEGORY SECTION --------*/
 
+/*-------- PRODUCT DETAILS SECTION --------*/
+.product__container{
+    display: grid;
+    grid-area: 4/1/5/5;
+    grid-template-columns: repeat(3,1fr);
+    margin: 0;
+    padding: 0;
+    /* padding-bottom: -500px; */
+    grid-gap: .1rem;
+}
+/*--x----- PRODUCT DETAILS SECTION -----x--*/
+
+/*-------- PRODUCT TITLE SECTION --------*/
+.product__title{
+    grid-area: 1/1/2/5;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+/*--x----- PRODUCT TITLE SECTION -----x--*/
+
+/*-------- PRODUCT FILTER BY SECTION --------*/
+.product__filter{
+    
+}
+/*--x----- PRODUCT FILTER BY SECTION -----x--*/
+
+/*--x----- PRODUCT CATEGORY SECTION -----x--*/
 
 /*--x----- FOOTER SECTION -----x--*/
 

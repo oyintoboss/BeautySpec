@@ -30,11 +30,11 @@ rel="stylesheet">
         <div class="account__container">
             <div class="link_register">
                 <span><i class="fas fa-user-circle"></i></span>
-               <a href="#">Register</a> 
+               <a href="register.html">Register</a> 
             </div>
             <div class="link_login">
                 <span><i class="fas fa-sign-in-alt"></i></span>
-                <a href="#">Login</a> 
+                <a href="login.html">Login</a> 
             </div>
         </div>
          <!--x----- LOGIN AND REGISTER SECTION -----x-->
@@ -42,7 +42,7 @@ rel="stylesheet">
         <!-------- LOGO SECTION -------->
         <div class="logo__container">
             
-                <a href="" class="logo__box"> <img src="./assets/images/luxeBeautyHouseLogo.jpg" class="luxeBeautyHouseLogo" alt="LuxeBeauty House Logo"> </a>
+                <a href="index.html" class="logo__box"> <img src="./assets/images/luxeBeautyHouseLogo.jpg" class="luxeBeautyHouseLogo" alt="LuxeBeauty House Logo"> </a>
             
             <span class="input__search"><input type="text" name="" id="" class="search__input" placeholder="I'm shopping for ...">
             <i class="fas fa-search "></i>
@@ -55,36 +55,52 @@ rel="stylesheet">
         </div>
         <!--x----- LOGO SECTION -----x-->
 
-        <!-------- NAVIGATION MENU SECTION -------->
-        <nav>
-            <div class="content">               
-                <div class="links">
-                    <a href="index.html">Home</a>
-                    <a href="index.html#New">New <i class="fas fa-caret-down"></i> </a>
-                    <a href="shop.html" class="active">Shop</a>
-                    <a href="">Catalogue</a>
-                    <a href="">About Us</a>
-                    <a href="">Contact Us</a>
-                </div>
-                
-                
-                <i class="material-icons menu" onclick="menu()";>menu</i>
-                <!-- <i class="material-icons menu2">menu</i> -->
+       <!-------- NAVIGATION MENU SECTION -------->
+       <nav>
+        <div class="content">               
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="./index.html#New">New  </a>
+                <a href="shop.html" class="active">  Shop <i class="fas fa-caret-down"></i> </a>
+                <a href="catalogue.html">Catalogue</a>
+                <a href="about_us.html">About Us</a>
+                <a href="contact_us.html">Contact Us</a>
             </div>
-            <div class="dropdown">                
-                <a href="index.html" class="active">Home</a>
-                <a href="index.html#New">New</a>
-                <a href="shop.html">Shop</a>
-                <a href="">Catalogue</a>
-                <a href="">About Us</a>
-                <a href="">Contact Us</a>
-            </div>
-        </nav>
-        <!--x----- NAVIGATION MENU SECTION -----x-->
+            
+            
+            <i class="material-icons menu" onclick="menu()";>menu</i>
+            <!-- <i class="material-icons menu2">menu</i> -->
+        </div>
+        <div class="dropdown">                
+            <a href="index.html" class="active">Home</a>
+            <a href="./index.html#New">New</a>
+            <a href="shop.html"> Shop <i class="fas fa-caret-down"></i> </a>
+            <a href="catalogue.html">Catalogue</a>
+            <a href="about_us.html">About Us</a>
+            <a href="contact_us.html">Contact Us</a>
+        </div>
+    </nav>
+    <!--x----- NAVIGATION MENU SECTION -----x-->
 
-        <!-------- BANNER IMAGE CONTAINER -------->
-   
-        <!-------- BANNER IMAGE CONTAINER -------->
+
+        <!-------- PRODUCT DETAILS SECTION -------->
+    <section class="product__container">
+        <h1 class="product__title">
+            PRODUCTS
+        </h1>
+        <div class="product__filter">
+
+            <i class="fas fa-list"></i>
+
+            <i class="fas fa-list-ul"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-th"></i>
+
+        </div>
+    </section>
+        <!-------- PRODUCT DETAILS SECTION -------->
 
         <!-------- NEW PRODUCT SECTION -------->
     
@@ -129,7 +145,9 @@ rel="stylesheet">
     
 </body>
 
-<script>
+<script src="./dropdown.js"></script>
+
+<!-- <script>
     var dropdown = document.querySelector("nav .dropdown");
 
     var button = document.querySelector("nav .menu");
@@ -152,6 +170,6 @@ rel="stylesheet">
         }
     });
 
-</script>
+</script> -->
 
 </html>
