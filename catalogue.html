@@ -72,10 +72,10 @@ rel="stylesheet">
                 <!-- <i class="material-icons menu2">menu</i> -->
             </div>
             <div class="dropdown">                
-                <a href="" class="active">Home</a>
+                <a href="" >Home</a>
                 <a href="./index.html#New">New</a>
                 <a href="shop.html"> Shop <i class="fas fa-caret-down"></i> </a>
-                <a href="catalogue.html">Catalogue</a>
+                <a href="catalogue.html" class="active">Catalogue</a>
                 <a href="about_us">About Us</a>
                 <a href="contact_us.html">Contact Us</a>
             </div>
@@ -123,31 +123,7 @@ rel="stylesheet">
     <!--x----- WRAPPER CONTAINER BEGINS -----x-->
 
     
+
+<script src="./dropdown.js"></script>
 </body>
-
-<script>
-    var dropdown = document.querySelector("nav .dropdown");
-
-    var button = document.querySelector("nav .menu");
-
-    function menu(){
-        if(dropdown.style.display === "grid"){
-            dropdown.style.display = "none";
-            button.innerHTML = "menu";
-        }
-        else{
-            dropdown.style.display = "grid";
-            button.innerHTML = "close";
-        }
-    }
-
-    addEventListener("resize", function() {
-        if(window.innerWidth > 700){
-            dropdown.style.display = "none";
-            button.innerHTML = "menu";
-        }
-    });
-
-</script>
-
 </html>

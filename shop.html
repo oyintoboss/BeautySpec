@@ -72,9 +72,9 @@ rel="stylesheet">
             <!-- <i class="material-icons menu2">menu</i> -->
         </div>
         <div class="dropdown">                
-            <a href="index.html" class="active">Home</a>
+            <a href="index.html">Home</a>
             <a href="./index.html#New">New</a>
-            <a href="shop.html"> Shop <i class="fas fa-caret-down"></i> </a>
+            <a href="shop.html" class="active"> Shop <i class="fas fa-caret-down"></i> </a>
             <a href="catalogue.html">Catalogue</a>
             <a href="about_us.html">About Us</a>
             <a href="contact_us.html">Contact Us</a>
@@ -89,14 +89,18 @@ rel="stylesheet">
             PRODUCTS
         </h1>
         <div class="product__filter">
-
+<div class="filter__title">Filter by: 
+    <span>
+        <!-- <i class="fas fa-list-ol"></i>  --><i class="fas fa-th"></i></span> Product Categories
+    
+</div>
             <i class="fas fa-list"></i>
 
             <i class="fas fa-list-ul"></i>
 
             <i class="fas fa-star"></i>
 
-            <i class="fas fa-th"></i>
+            
 
         </div>
     </section>
@@ -143,33 +147,7 @@ rel="stylesheet">
     <!--x----- WRAPPER CONTAINER BEGINS -----x-->
 
     
-</body>
-
 <script src="./dropdown.js"></script>
-
-<!-- <script>
-    var dropdown = document.querySelector("nav .dropdown");
-
-    var button = document.querySelector("nav .menu");
-
-    function menu(){
-        if(dropdown.style.display === "grid"){
-            dropdown.style.display = "none";
-            button.innerHTML = "menu";
-        }
-        else{
-            dropdown.style.display = "grid";
-            button.innerHTML = "close";
-        }
-    }
-
-    addEventListener("resize", function() {
-        if(window.innerWidth > 700){
-            dropdown.style.display = "none";
-            button.innerHTML = "menu";
-        }
-    });
-
-</script> -->
+</body>
 
 </html>
