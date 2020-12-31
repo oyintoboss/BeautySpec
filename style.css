@@ -109,7 +109,12 @@ a:hover{
     border-top: none;
     margin-top: 4rem;
     height: 2rem;
+   
     }
+
+.search__icon{
+    margin-right: 5rem;
+}
 
 .search__input::placeholder{
     /* color: red; */
