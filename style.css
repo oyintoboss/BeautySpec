@@ -869,7 +869,6 @@ nav .dropdown a:hover{
 }
 /*--x----- LUXEBEAUTYHOUSE PICTURE LOGO -----x--*/
 
-
 .input__search{
     grid-area: 1/2/2/3;
     align-content: space-around;
@@ -887,7 +886,7 @@ nav .dropdown a:hover{
     margin-top: 4rem;
     height: 2rem;
     /* padding-bottom: ; */
-    }
+}
 
 .search__input::placeholder{
     /* color: red; */
@@ -1272,6 +1271,36 @@ nav .content .links{
     width: 92%;
 }
 /*--x----- FOOTER COLUMN 3 -----x--*/
+
+/*-------- PRODUCT FILTER BY SECTION --------*/
+
+/*--x----- PRODUCT FILTER BY SECTION -----x--*/
+
+/*-------- PRODUCT SHOP IMAGES SECTION --------*/
+.product__images__container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 8rem;
+    padding: 0;
+    margin: 0;
+}
+
+.product__images__container .image__box > img{
+    width: 24.74rem;
+    height: 24.8rem;
+    margin-bottom: 1rem;
+}
+
+.image__details{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 1rem;
+}
+
+.product__star{
+    float: right;
+}
+/*--x----- PRODUCT SHOP IMAGES SECTION -----x--*/
 
 /*--x----- FOOTER SECTION -----x--*/
 
