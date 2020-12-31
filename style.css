@@ -272,7 +272,7 @@ nav .dropdown a:hover{
     min-height: 35rem;
     height: 35rem;
     width: 100%;
-    background: url('./assets/images/banner2.jpg');
+    background: url('./assets/images/home/banner__1.jpg');
     background-size: cover;
     background-position: center; 
     display: grid;
@@ -306,7 +306,7 @@ nav .dropdown a:hover{
     min-height: 38rem;
     height: 38rem;
     width: 100%;
-    background: url('./assets/images/home/pretty7.jpg');
+    background: url('./assets/images/home/banner_2.jpg');
     background-size: cover;
     background-position: center; 
     display: grid;
@@ -364,7 +364,7 @@ nav .dropdown a:hover{
     min-width: 20rem;
     height: 20rem;
     width: 20rem;
-    background: url('./assets/images/home/p1.jpg');
+    background: url('./assets/images/home/new1\ \(1\).jpg');
     background-size: cover;
     background-position: center; 
     display: grid;
@@ -380,7 +380,7 @@ nav .dropdown a:hover{
     min-width: 20rem;
     height: 20rem;
     width: 20rem;
-    background: url('./assets/images/p2.jpg');
+    background: url('./assets/images/home/new1\ \(2\).jpg');
     background-size: cover;
     background-position: center; 
     display: grid;
@@ -398,7 +398,7 @@ nav .dropdown a:hover{
     width: 20rem;
     padding: 0;
     margin: 0;
-    background: url('./assets/imageS/p3.jpg');
+    background: url('./assets/images/home/new1\ \(3\).jpg');
     background-size: cover;
     background-position: center; 
     display: grid;
@@ -428,7 +428,7 @@ nav .dropdown a:hover{
     min-width: 20rem;
     height: 20rem;
     width: 20rem;
-    background: url('./assets/images/p4.jpg');
+    background: url('./assets/images/home/new1\ \(4\).jpg');
     background-size: cover;
     background-position: center; 
     display: grid;
@@ -526,7 +526,7 @@ nav .dropdown a:hover{
     min-height: 20rem;
     min-width: 50rem; 
     width: 100%;
-    background: url('./assets/images/eyes1.jpg');
+    background: url('./assets/images/home/eyes1.jpg');
     
     background-position: center; 
     margin-bottom: 1rem;
@@ -544,7 +544,7 @@ nav .dropdown a:hover{
     min-height: 20rem;
     min-width: 50rem; 
     width: 100%;
-    background: url('./assets/images/lips1.jpg');
+    background: url('./assets/images/home/lips1.jpg');
     
     background-position: center; 
     margin-bottom: 1rem;
@@ -562,7 +562,7 @@ nav .dropdown a:hover{
     min-height: 20rem;
     min-width: 50rem; 
     width: 100%;   
-    background: url('./assets/images/powder.jpg');
+    background: url('./assets/images/home/powder.jpg');
     background-position: center; 
     margin-bottom: 1rem;
      display: grid;
@@ -578,7 +578,7 @@ nav .dropdown a:hover{
     min-height: 20rem;
     min-width: 50rem; 
     width: 100%;
-    background: url('./assets/images/makeup__tools.jpg');
+    background: url('./assets/images/home/makeup__tools.jpg');
    
     background-position: center; 
     margin-bottom: 1rem;
@@ -948,7 +948,7 @@ nav .content .links{
     min-height: 26rem;
     height: 26rem;
     width: 100%;
-    background: url('./assets/images/banner2.jpg');
+    background: url('./assets/images/home/banner__1.jpg');
     background-size: cover;
     background-position: center; 
     display: grid;
@@ -977,7 +977,7 @@ nav .content .links{
 .banner__image__2{
     height: 26rem;
     min-height: 26rem;
-    background: url('./assets/images/pretty7.jpg');
+    background: url('./assets/images/home/banner_2.jpg');
     background-size: cover;
     background-position: center; 
     display: grid;
@@ -1033,7 +1033,7 @@ nav .content .links{
     min-width: 17rem;
     height: 20rem;
     width: 15rem;
-    background: url('./assets/images/p1.jpg');
+    background: url('./assets/images/home/new1\ \(1\).jpg');
     background-size: cover;
     background-position: center; 
     display: grid;
@@ -1051,7 +1051,7 @@ nav .content .links{
     min-width: 17rem;
     height: 20rem;
     width: 15rem;
-    background: url('./assets/images/p2.jpg');
+    background: url('./assets/images/home/new1\ \(2\).jpg');
     background-size: cover;
     background-position: center; 
     display: grid;
@@ -1069,7 +1069,7 @@ nav .content .links{
     min-width: 17rem;
     height: 20rem;
     width: 15rem;
-    background: url('./assets/imageS/p3.jpg');
+    background: url('./assets/images/home/new1\ \(3\).jpg');
     background-size: cover;
     background-position: center; 
     display: grid;
@@ -1086,7 +1086,7 @@ nav .content .links{
     min-width: 17rem;
     height: 20rem;
     width: 15rem;
-    background: url('./assets/images/p4.jpg');
+    background: url('./assets/images/home/new1\ \(4\).jpg');
     background-size: cover;
     background-position: center; 
     display: grid;
@@ -1136,7 +1136,7 @@ nav .content .links{
     min-width: 15rem; 
     width: 33rem;
     height: 10rem;
-    background: url('./assets/images/eyes1.jpg');  
+    background: url('./assets/images/home/eyes1.jpg');  
     background-position: center; 
     margin-bottom: 1rem;
     display: grid;
@@ -1153,7 +1153,7 @@ nav .content .links{
     min-width: 15rem; 
     width: 33rem;
     height: 10rem;
-    background: url('./assets/images/lips1.jpg');    
+    background: url('./assets/images/home/lips1.jpg');    
     background-position: center; 
     margin-bottom: 1rem;
     display: grid;
@@ -1170,7 +1170,7 @@ nav .content .links{
     min-width: 15rem; 
     width: 33rem;
     height: 10rem;  
-    background: url('./assets/images/powder.jpg');
+    background: url('./assets/images/home/powder.jpg');
     background-position: center; 
     margin-bottom: 1rem;
     display: grid;
@@ -1186,7 +1186,7 @@ nav .content .links{
     min-width: 15rem; 
     width: 33rem;
     height: 10rem;
-    background: url('./assets/images/makeup__tools.jpg');
+    background: url('./assets/images/home/makeup__tools.jpg');
     background-position: center; 
     margin-bottom: 1rem;
     display: grid;
@@ -1431,7 +1431,7 @@ nav .content .links{
         min-height: 18rem;
         height: 18rem;
         width: 100%;
-        background: url('./assets/images/banner2.jpg');
+        background: url('./assets/images/home/banner__1.jpg');
         background-size: cover;
         background-position: center; 
         display: grid;
@@ -1463,7 +1463,7 @@ nav .content .links{
         height: 18rem;
         width: 100%;
         max-width: 100%;
-        background: url('./assets/images/pretty7.jpg');
+        background: url('./assets/images/home/banner_2.jpg');
         background-size: cover;
         background-position: center; 
         display: grid;
@@ -1520,7 +1520,7 @@ nav .content .links{
         min-width: 17rem;
         height: 20rem;
         width: 15rem;
-        background: url('./assets/images/p1.jpg');
+        background: url('./assets/images/home/new1\ \(1\).jpg');
         background-size: cover;
         background-position: center; 
         display: grid;
@@ -1538,7 +1538,7 @@ nav .content .links{
         min-width: 17rem;
         height: 20rem;
         width: 15rem;
-        background: url('./assets/images/p2.jpg');
+        background: url('./assets/images/home/new1\ \(2\).jpg');
         background-size: cover;
         background-position: center; 
         display: grid;
@@ -1556,7 +1556,7 @@ nav .content .links{
         min-width: 17rem;
         height: 20rem;
         width: 15rem;
-        background: url('./assets/imageS/p3.jpg');
+        background: url('./assets/images/home/new1\ \(3\).jpg');
         background-size: cover;
         background-position: center; 
         display: grid;
@@ -1574,7 +1574,7 @@ nav .content .links{
         min-width: 17rem;
         height: 20rem;
         width: 15rem;
-        background: url('./assets/images/p4.jpg');
+        background: url('./assets/images/home/new1\ \(4\).jpg');
         background-size: cover;
         background-position: center; 
         display: grid;
@@ -1630,7 +1630,7 @@ nav .content .links{
         min-height: 10rem;
         height: 10rem;  
         width: 100%;
-        background: url('./assets/images/eyes1.jpg');  
+        background: url('./assets/images/home/eyes1.jpg');  
         background-position: center; 
         margin-bottom: 1rem;
         display: grid;
@@ -1646,7 +1646,7 @@ nav .content .links{
         min-height: 10rem;
         width: 100%;
         height: 10rem;
-        background: url('./assets/images/lips1.jpg');
+        background: url('./assets/images/home/lips1.jpg');
         background-position: center; 
         margin-bottom: 1rem;
         display: grid;
@@ -1662,7 +1662,7 @@ nav .content .links{
         min-height: 10rem;
         width: 100%;
         height: 10rem;  
-        background: url('./assets/images/powder.jpg');
+        background: url('./assets/images/home/powder.jpg');
         background-position: center; 
         margin-bottom: 1rem;
          display: grid;
@@ -1677,7 +1677,7 @@ nav .content .links{
         min-height: 10rem;
         width: 100%;
         height: 10rem;
-        background: url('./assets/images/makeup__tools.jpg');
+        background: url('./assets/images/home/makeup__tools.jpg');
         background-position: center; 
         margin-bottom: 1rem;
         display: grid;
