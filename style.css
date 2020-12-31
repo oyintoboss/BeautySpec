@@ -796,9 +796,20 @@ nav .dropdown a:hover{
     margin: 0;
 }
 
-.product__images__container > img{
-    width: 24.8rem;
+.product__images__container .image__box > img{
+    width: 24.74rem;
     height: 24.8rem;
+    margin-bottom: 1rem;
+}
+
+.image__details{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 1rem;
+}
+
+.product__star{
+    float: right;
 }
 /*--x----- PRODUCT SHOP IMAGES SECTION -----x--*/
 
