@@ -42,7 +42,7 @@ rel="stylesheet">
         <!-------- LOGO SECTION -------->
         <div class="logo__container">
             
-                <a href="index.html" class="logo__box"> <img src="./assets/images/luxeBeautyHouseLogo.jpg" class="luxeBeautyHouseLogo" alt="LuxeBeauty House Logo"> </a>
+                <a href="index.html" class="logo__box"> <img src="./assets/images/home/luxeBeautyHouseLogo.jpg" class="luxeBeautyHouseLogo" alt="LuxeBeauty House Logo"> </a>
             
             <span class="input__search"><input type="text" name="" id="" class="search__input" placeholder="I'm shopping for ...">
             <i class="fas fa-search "></i>
@@ -84,8 +84,9 @@ rel="stylesheet">
 
          <!-------- PRODUCT DETAILS SECTION -------->
     <section class="product__container">
-        <h1 class="product__title">
-           <span class="back"> &#60; back </span> CHECK OUT
+        <h1 class="stock__title">
+        <a href="./shop.html" class="back"> &#60; back </a>
+        <span class="checkout__title"> CHECK OUT </span>
         </h1>
 <div class="checkout__container">
     <div class="checkout__images">
@@ -100,12 +101,20 @@ rel="stylesheet">
     
     <div class="checkout__steps">
         <h1>Matte Liquid LipStick</h1>
-        <div>R 99</div>
-        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
-        <div>In Stock</div>
-        <div>
-            <input type="number" min="1" value="1">
-            <input type="button" value="ADD TO BASKET">
+        <div class="checkout__price">R 99</div>
+        <div class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+        <div class="checkout__instock">In Stock</div>
+        <div class="input__basket">
+            <input type="number" min="1" value="1" class="input__number">
+            <input type="button" value="ADD TO BASKET" class="add__to__basket">
+        </div>
+        <input type="button" value="CHECK OUT" class="checkout__btn">
+        <div class="social__media">
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#">  </a>
+            <a href="#"><i class="far fa-envelope"></i></a>
         </div>
     </div>
 </div>
