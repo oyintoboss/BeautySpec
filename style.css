@@ -71,6 +71,28 @@ a:hover{
 
 /*--x----- ACCOUNT CONTAINER SECTION -----x--*/
 
+/*-------- HORIZONTAL LINE --------*/
+.horizontal__line{
+    grid-area: 2/1/3/5;
+    margin-top: .5rem;
+width: 100%;
+border-top: 1px solid black;
+border-bottom: none;
+border-left: none;
+border-right: none;
+}
+
+.horizontal__line__2{
+    grid-area: 7/1/8/5;
+    margin-top: 1.8rem;
+width: 100%;
+border-top: 1px solid black;
+border-bottom: none;
+border-left: none;
+border-right: none;
+}
+/*--x----- HORIZONTAL LINE -----x--*/
+
 /*-------- LOGO SECTION --------*/
 .logo__container{
     display: grid;
@@ -91,8 +113,9 @@ a:hover{
 /*-------- LUXEBEAUTYHOUSE PICTURE LOGO --------*/
 .luxeBeautyHouseLogo{
     max-width: 90%; 
+    margin-top: 1rem;
     height: 90%;
-    max-height: 10rem;
+    max-height: 8rem;
 }
 /*--x----- LUXEBEAUTYHOUSE PICTURE LOGO -----x--*/
 
@@ -463,10 +486,14 @@ nav .dropdown a:hover{
 /*-------- SHOPPING CART ICON --------*/
 .cart__product{
     grid-area: 8/8/9/9;
-    margin-top: 10rem;
-    padding-top: 3.3rem;
+    margin-top: 12.8rem;
+}
+
+.cart__product > i{
+    padding: .5rem;
     margin-right: .5rem;
-    border-radius: 2rem;
+    border: 1px solid black; 
+    border-radius: 34px 34px;
 }
 
 .cart__product:hover{
@@ -478,7 +505,12 @@ nav .dropdown a:hover{
 }
 
 .back{
-    float: left !important;
+    grid-area: 1/1/2/2;
+    margin-right: 30rem;
+}
+
+.checkout__title{
+    grid-area: 1/1/2/3;
 }
 /*--x----- SHOPPING CART ICON -----x--*/
 
@@ -503,7 +535,7 @@ nav .dropdown a:hover{
     text-align: center;
     padding: 0;
     height: 4rem;
-    margin-top: 1.5rem;
+    margin-top: 4rem;
     margin-bottom: 1.5rem;
     margin-left: 3rem;
     margin-right: 3rem;
@@ -572,9 +604,11 @@ nav .dropdown a:hover{
     grid-template-rows: repeat(4,1fr);
     grid-gap: .5rem;
 } 
+
 /*--x----- POWDER SECTION -----x--*/
+
 /*-------- MAKEUP SECTION --------*/
- /* background-size: cover; */ 
+
 .tools{
    
     min-height: 20rem;
@@ -589,10 +623,6 @@ nav .dropdown a:hover{
     grid-template-rows: repeat(4,1fr);
     grid-gap: .5rem;
 } 
-/*--x----- MAKEUP SECTION -----x--*/
-
-/*-------- MAKEUP SECTION --------*/
-
 /*--x----- MAKEUP SECTION -----x--*/
 
 /*-------- LEFT SIDE SECTION --------*/
@@ -813,7 +843,7 @@ nav .dropdown a:hover{
     place-items: center;
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    grid-gap: .1rem;   
+    grid-gap: .1rem;  
 }
 
 .or{
@@ -822,14 +852,21 @@ nav .dropdown a:hover{
     margin-bottom: 1rem;
 }
 
-#email__address, #password, #first__name, #last__name{
+#email__address,
+ #password, 
+ #first__name, 
+ #last__name{
     place-items: center;
     height: 3rem;
     width: 19.5rem;
     margin-top: .1rem;
 }
 
-.firstname__info, .lastname__info, .email__address__info, .password__info{
+
+.firstname__info,
+ .lastname__info, 
+ .email__address__info,
+  .password__info{
     display: grid;
     grid-template-columns: repeat(1,1fr);
     grid-row-gap: 1rem;
@@ -926,9 +963,13 @@ nav .dropdown a:hover{
 .stock__title{
     grid-area: 1/1/2/5;
     text-align: center;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
+
 /*--x----- PRODUCT TITLE SECTION -----x--*/
 
 /*-------- PRODUCT FILTER BY SECTION --------*/
@@ -1031,6 +1072,7 @@ nav .dropdown a:hover{
 /*--x----- PRODUCT SHOP IMAGES SECTION -----x--*/
 
 /*-------- PRODUCT CATEGORY IMAGES SECTION --------*/
+
 .product__category__container{
     display: grid;
     grid-template-columns: repeat(5,1fr);
@@ -1094,6 +1136,39 @@ nav .dropdown a:hover{
 
 /*--x----- PRODUCT CATEGORY IMAGES SECTION -----x--*/
 
+/*-------- RELATED PRODUCT SECTION --------*/
+.related__product__container{
+    grid-area: 5/1/6/5;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+
+.related__images{
+    grid-area: 2/1/3/2;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: .1rem;
+    place-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.related__images__box > img{
+    width: 19rem;
+    height: 19rem;
+    padding: 0;
+    margin: 0;
+}
+
+.related__images__details{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-row-gap: 2rem;
+    margin-top: 2rem;
+}
+/*--x----- RELATED PRODUCT SECTION -----x--*/
+
 /*-------- CATEGORY PAGE ICON --------*/
 .fav__cat{
     grid-area: 1/5/3/6;
@@ -1124,16 +1199,166 @@ nav .dropdown a:hover{
 /*--x----- FOOTER SECTION -----x--*/
 
 /*-------- CHECK OUT PAGE IN STOCK --------*/
+
+/*-------- CHECK OUT IMAGES SECTION --------*/
+
 .checkout__container{
+    grid-area: 2/1/3/5;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-gap: 1rem;
+    grid-gap: .1rem;
+}
+
+.checkout__images{
+    grid-area: 1/1/2/2;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: .1rem;
     padding: 0;
     margin: 0;
-    margin-top: 2rem;
-    margin-left: 16rem;
-    margin-right: 16rem;
 }
+
+.checkout__images > img{
+    grid-area: 1/1/2/2;
+    width: 38rem;
+    height: 35rem;
+    padding: 0;
+    margin: 0;
+}
+
+.small__images{
+    display: grid;
+    grid-area: 2/1/3/2;
+    place-items: center;
+    height: 5rem;
+    width: 38rem;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: .2rem;
+    margin: 0;
+    padding: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--buttonbackground);
+}
+
+.small__images > img{
+    width: 5rem;
+    padding: 0;
+    margin: 0;
+}
+
+/*--x----- CHECK OUT IMAGES SECTION -----x--*/
+
+/*-------- CHECK OUT IMAGES INFORMATION SECTION --------*/
+
+.checkout__info{
+    grid-area: 1/2/2/3;
+}
+
+.checkout__product__name{
+    margin-bottom: 2rem;
+}
+
+.checkout__price{
+    margin-bottom: 2rem;
+}
+
+.description{
+    margin-bottom: 2rem;
+}
+
+.checkout__instock{
+    margin-bottom: 2rem;
+}
+
+
+
+.checkout__price, .checkout__instock{
+    font-size: 1.4rem;
+}
+
+.input__basket{
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1.8rem;
+}
+
+.input__number{
+    width: 3.8rem;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.out__of__stock__text{
+    color: red;
+}
+
+.email__details{
+    width: 20rem;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.add__to__basket{
+    height: 3.4rem;
+    width: 13.5rem;
+    padding-top: .4rem;
+    padding-bottom: .9rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1rem;
+}
+
+.add__to__basket:hover{
+    background-color: var(--buttonbackground);
+    border: 1px solid var(--buttonbackground);
+    height: 3.4rem;
+    width: 13.5rem;
+    padding-top: .4rem;
+    padding-bottom: .9rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1rem;
+}
+
+.checkout__btn{
+    height: 3.4rem;
+    width: 20rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.checkout__btn:hover{
+    background-color: var(--buttonbackground);
+    border: 1px solid var(--buttonbackground);
+    height: 3.4rem;
+    width: 20rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 1rem;
+}
+
+.social__media{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 1.8rem;
+    padding: 0;
+    margin: 0;
+} 
+
+/*--x----- CHECK OUT IMAGES INFORMATION SECTION -----x--*/
+
+
+/* .checkout__container{
+
 
 .checkout__images{
     grid-area: 1/1/2/2;
@@ -1255,7 +1480,7 @@ nav .dropdown a:hover{
     grid-gap: 1.8rem;
     padding: 0;
     margin: 0;
-}
+} */
 
 /*--x----- CHECK OUT PAGE IN STOCK -----x--*/
 
@@ -1873,7 +2098,6 @@ nav .content .links{
     place-items: center;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: repeat(6,1fr);
-    /* grid-column-gap: 2.8rem; */
     grid-row-gap: 1.5rem;
     padding: 0;
     margin: 0;
@@ -1927,7 +2151,15 @@ nav .content .links{
 /*--x----- CATEGORY PAGE ICON -----x--*/
 
 /*-------- CHECK OUT PAGE IN STOCK --------*/
+
 .checkout__container{
+    grid-area: 2/1/3/5;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 2rem;
+}
+
+/* .checkout__container{
     display: grid;
     grid-template-columns: repeat(1,1fr);
     grid-row-gap: 2rem;
@@ -1935,9 +2167,9 @@ nav .content .links{
     margin: 0;
     margin-top: 2rem;
     margin-left: .05rem;
-}
+} */
 
-.checkout__images{
+/* .checkout__images{
     grid-area: 1/1/2/2;
     padding: 0;
     margin: 0;
@@ -2065,8 +2297,42 @@ nav .content .links{
 .social__media > a{
     padding: 0;
     margin: 0;
-}
+} */
 /*--x----- CHECK OUT PAGE IN STOCK -----x--*/
+
+/*-------- RELATED PRODUCT SECTION --------*/
+.related__product__container{
+    grid-area: 5/1/6/5;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: .5rem;
+}
+
+.related__images{
+    grid-area: 2/1/3/2;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: .5rem;
+    place-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.related__images__box > img{
+    width: 19rem;
+    height: 19rem;
+    padding: 0;
+    margin: 0;
+}
+
+.related__images__details{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-row-gap: 2rem;
+    margin-top: 2rem;
+}
+/*--x----- RELATED PRODUCT SECTION -----x--*/
 
 }
 
@@ -2708,25 +2974,23 @@ nav .content .links{
 
 /*-------- CHECK OUT PAGE IN STOCK --------*/
 
-.stock__title{
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+.checkout__container{
+    grid-area: 2/1/3/5;
     display: grid;
     grid-template-columns: repeat(1,1fr);
     grid-gap: 2rem;
 }
 
-.description{
-    margin-right: rem;
-}
-
-.checkout__title{
+/* .checkout__title{
     margin-right: 14rem;
+} */
+
+/* .description{
+    margin-right: rem;
 }
 
 .back{
     margin-top: 1rem;
-    margin-right: 35rem;
 }
 
 .product__container > .checkout__container{
@@ -2734,8 +2998,6 @@ nav .content .links{
     grid-template-columns: repeat(1,1fr);
     padding: 0;
     margin: 0;
-    margin-left: 2.5rem;
-    margin-top: 2rem;
 }
 
 .checkout__images{
@@ -2863,7 +3125,7 @@ nav .content .links{
 .social__media > a{
     padding: 0;
     margin: 0;
-}
+} */
 /*--x----- CHECK OUT PAGE IN STOCK -----x--*/
 
 /*-------- LOGIN PAGE SECTION --------*/
@@ -2873,10 +3135,48 @@ nav .content .links{
     grid-template-columns: repeat(1,1fr);
     place-items: center;
     grid-row-gap: .1rem;
-    margin-left: 3.5rem;
-    margin-right: 3.5rem;
+    /* margin-left: 3.5rem;
+    margin-right: 3.5rem; */
 }
 /*--x----- LOGIN PAGE SECTION -----x--*/
+
+/*-------- RELATED PRODUCT SECTION --------*/
+.related__product__container{
+    grid-area: 5/1/6/5;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: .5rem;
+}
+
+.related__images{
+    grid-area: 2/1/3/2;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: .5rem;
+    place-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.related__images__box{
+    margin-top: 2rem;
+}
+
+.related__images__box > img{
+    width: 19rem;
+    height: 19rem;
+    padding: 0;
+    margin: 0;
+}
+
+.related__images__details{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-row-gap: 2rem;
+    margin-top: 2rem;
+}
+/*--x----- RELATED PRODUCT SECTION -----x--*/
 
 }
 
