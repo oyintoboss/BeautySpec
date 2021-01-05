@@ -496,13 +496,13 @@ nav .dropdown a:hover{
     border-radius: 34px 34px;
 }
 
-.cart__product:hover{
+/* .cart__product:hover{
     grid-area: 8/8/9/9;
     margin-top: 10rem;
     padding-top: 3.3rem;
     margin-right: .5rem;
     border-radius: 2rem;
-}
+} */
 
 .back{
     grid-area: 1/1/2/2;
