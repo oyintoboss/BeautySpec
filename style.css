@@ -1497,8 +1497,16 @@ border-bottom: 1px solid black;
 
 /*--x----- SHOPPING STEPS -----x--*/
 
-.shopping__page__details{
+.horizontal__line__4{
     grid-area: 5/1/6/5;
+    margin-top: 1.8rem;
+width: 100%;
+border: none;
+border-bottom: 1px solid black;
+}
+
+.shopping__page__details{
+    grid-area: 6/1/7/5;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 2rem;
@@ -3248,8 +3256,8 @@ border-bottom: 1px solid black;
     place-items: center;
     grid-template-columns: repeat(1,1fr);
     grid-gap: 2rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .ouraddress{
