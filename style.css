@@ -3644,6 +3644,8 @@ border-bottom: 1px solid black;
     display: grid;
     grid-template-columns: repeat(1,1fr);
     grid-row-gap: 1rem;
+   padding-right: 1rem;
+   padding-left: 1rem;
 }
 
 /*-------- TABLE CONTAINER SECTION --------*/
@@ -3673,7 +3675,7 @@ tr:hover{
 }
 
 th, td{
-    padding: 1rem;
+    padding: .6rem;
     text-align: left;
 }
 
