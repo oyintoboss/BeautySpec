@@ -126,35 +126,30 @@ rel="stylesheet">
 <!-------- SHOPPING PAGE SECTION -------->
 <section class="shopping__page__details">
 <div class="shopping__page__items">
-<table>
-    <thead>
-    <tr>
-            <td>PRODUCT</td>
-            <td>PRICE</td>
-            <td>QUANTITY</td>
-            <td>TOTAL</td>
-       
-    </tr>
-</thead>
-        <tbody>
-            <tr>
-<td>Mink Lashes <i class="fas fa-trash-alt"></i></td>
-<td>400</td>
-<td>1</td>
-<td>R 400</td>
-</tr>
-<tr>
-    <td>Matte Liquid Lipstick <i class="fas fa-trash-alt"></i></td>
-    <td>380</td>
-    <td>3</td>
-    <td>R 1140</td>
-    </tr>
-</tbody>
+<table class="table__container">
+        <tr>
+                <th>PRODUCT</th>
+                <th>PRICE</th>
+                <th>QUANTITY</th>
+                <th>TOTAL</th>  
+        </tr>
+        <tr>
+            <td>Mink Lashes <span class="mink__lashes"> <i class="fas fa-trash-alt"></i> </span></td>
+            <td>400</td>
+            <td class="quantity"> <input type="number" min="1" value="1" class="input__number"> </td>
+            <td>R 400</td>
+        </tr>
+        <tr>
+            <td>Matte Liquid Lipstick <i class="fas fa-trash-alt"></i></td>
+            <td>380</td>
+            <td class="quantity"> <input type="number" min="1" value="1" class="input__number"> </td>
+            <td>R 1140</td>
+        </tr>
 </table>
-<input type="text" class="coupon__code" value="Enter coupon code">
-<input type="button" value="APPLY COUPON">
+<input type="text" class="coupon__code" placeholder="Enter coupon code">
+<input type="button" class="apply__coupon" value="APPLY COUPON">
 
-<input type="button" value="UPDATE CART">
+<input type="button" class="update__cart" value="UPDATE CART">
 </div>
 <div class="shopping__page__summary">
     <h3>CART TOTAL</h3>

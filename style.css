@@ -1443,7 +1443,8 @@ border-bottom: 1px solid black;
     grid-area: 2/1/3/5;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-column-gap: .4rem;
+    grid-row-gap: .4rem;
+    text-align: center;
 }
 
 .steps__box > i{
@@ -1488,7 +1489,7 @@ border-bottom: 1px solid black;
 
 /*--x----- SHOPPING STEPS -----x--*/
 
-/*--x----- SHOPPING CART PAGE -----x--*/
+/*-------- SHOPPING CART PAGE -------*/
 .horizontal__line__4{
     grid-area: 5/1/6/5;
     margin-top: 1.8rem;
@@ -1501,12 +1502,139 @@ border-bottom: 1px solid black;
     grid-area: 6/1/7/5;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 2rem;
+    grid-gap: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 2rem;
 }
 
 .shopping__page__items{
     grid-area: 1/1/2/3;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-row-gap: 1rem;
 }
+
+/*-------- TABLE CONTAINER SECTION --------*/
+
+.table__container{
+    overflow-x:auto;
+    width: 100%;
+    border-collapse: collapse;
+    grid-area: 1/1/2/3;
+}
+
+.table__container, th, td{
+    border: 1px solid black;
+}
+
+th{
+    background-color: var(--even__table__row);
+    height: 4rem;
+}
+
+tr:nth-child(even){
+    background-color: var(--even__table__row);
+}
+
+tr:hover{
+    background-color: var(--table__hover);
+}
+
+th, td{
+    padding: 1.2rem;
+    text-align: left;
+}
+
+td{
+    height: 50px;
+    vertical-align: middle;
+}
+
+.quantity{
+    vertical-align: middle;
+    text-align: center;
+}
+
+/*-------- DELETE ICON --------*/
+.fa-trash-alt{
+    text-align: right;
+    margin-left: 16rem; 
+}
+
+.mink__lashes{
+    text-align: right;
+}
+/*--x----- DELETE ICON -----x--*/
+
+/*--x----- TABLE CONTAINER SECTION -----x--*/
+
+/*-------- COUPON CODE --------*/
+.coupon__code{
+    grid-area: 2/1/3/3;
+    width: 15rem;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    height: 3.4rem;
+}
+
+.coupon__code::placeholder{
+    
+    font-size: 1rem;
+    padding-left: 1.4rem;
+    margin-left: 3rem;
+}
+/*--x----- COUPON CODE -----x--*/
+
+/*-------- APPLY COUPON --------*/
+.apply__coupon{
+    grid-area: 3/1/4/3;
+    width: 15rem;
+    height: 3.4rem;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: var(--buttonbackground);
+    border: 1px solid var(--buttonbackground);
+    color: var(--light);
+}
+
+.apply__coupon:hover{
+    width: 15rem;
+    height: 3.4rem;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: var(--light);
+    border: 1px solid var(--buttonbackground);
+    color: var(--dark);
+}
+/*--x----- APPLY COUPON -----x--*/
+
+/*-------- UPDATE CART --------*/
+.update__cart{
+    grid-area: 4/1/5/3;
+    margin-top: 4rem;
+    width: 15rem;
+    vertical-align: middle;
+    height: 3.4rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.update__cart:hover{
+    margin-top: 4rem;
+    width: 15rem;
+    vertical-align: middle;
+    height: 3.4rem;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: var(--buttonbackground);
+    border: 1px solid var(--buttonbackground);
+    color: var(--light);
+}
+/*--x----- UPDATE CART -----x--*/
+
 
 .shopping__page__summary{
     grid-area: 1/3/2/4;
@@ -2388,6 +2516,162 @@ border-bottom: 1px solid black;
 }
 /*--x----- CONTACT US PAGE -----x--*/
 
+/*-------- SHOPPING CART PAGE -------*/
+.horizontal__line__4{
+    grid-area: 5/1/6/5;
+    margin-top: 1.8rem;
+width: 100%;
+border: none;
+border-bottom: 1px solid black;
+}
+
+.shopping__page__details{
+    grid-area: 6/1/7/5;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+}
+
+.shopping__page__items{
+    grid-area: 1/1/2/2;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-row-gap: 1rem;
+}
+
+/*-------- TABLE CONTAINER SECTION --------*/
+
+.table__container{
+    overflow-x:auto;
+    width: 100%;
+    border-collapse: collapse;
+    grid-area: 1/1/2/2;
+}
+
+.table__container, th, td{
+    border: 1px solid black;
+}
+
+th{
+    background-color: var(--even__table__row);
+    height: 4rem;
+}
+
+tr:nth-child(even){
+    background-color: var(--even__table__row);
+}
+
+tr:hover{
+    background-color: var(--table__hover);
+}
+
+th, td{
+    padding: 1.2rem;
+    text-align: left;
+}
+
+td{
+    height: 50px;
+    vertical-align: middle;
+}
+
+.quantity{
+    vertical-align: middle;
+    text-align: center;
+}
+
+/*-------- DELETE ICON --------*/
+.fa-trash-alt{
+    text-align: right;
+    margin-left: 16rem; 
+}
+
+.mink__lashes{
+    text-align: right;
+}
+/*--x----- DELETE ICON -----x--*/
+
+/*--x----- TABLE CONTAINER SECTION -----x--*/
+
+/*-------- COUPON CODE --------*/
+.coupon__code{
+    grid-area: 2/1/3/2;
+    width: 15rem;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    height: 3.4rem;
+}
+
+.coupon__code::placeholder{
+    
+    font-size: 1rem;
+    padding-left: 1.4rem;
+    margin-left: 3rem;
+}
+/*--x----- COUPON CODE -----x--*/
+
+/*-------- APPLY COUPON --------*/
+.apply__coupon{
+    grid-area: 3/1/4/2;
+    width: 15rem;
+    height: 3.4rem;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: var(--buttonbackground);
+    border: 1px solid var(--buttonbackground);
+    color: var(--light);
+}
+
+.apply__coupon:hover{
+    width: 15rem;
+    height: 3.4rem;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: var(--light);
+    border: 1px solid var(--buttonbackground);
+    color: var(--dark);
+}
+/*--x----- APPLY COUPON -----x--*/
+
+/*-------- UPDATE CART --------*/
+.update__cart{
+    grid-area: 4/1/5/2;
+    margin-top: 4rem;
+    width: 15rem;
+    vertical-align: middle;
+    height: 3.4rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.update__cart:hover{
+    margin-top: 4rem;
+    width: 15rem;
+    vertical-align: middle;
+    height: 3.4rem;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: var(--buttonbackground);
+    border: 1px solid var(--buttonbackground);
+    color: var(--light);
+}
+/*--x----- UPDATE CART -----x--*/
+
+
+.shopping__page__summary{
+    grid-area: 2/1/3/2;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+
+/*--x----- SHOPPING CART PAGE -----x--*/
+
 }
 
 /*--x----- MEDIA QUERIES FOR 700PX -----x--*/
@@ -3255,6 +3539,213 @@ border-bottom: 1px solid black;
     grid-area: 2/1/3/2;
 }
 /*--x----- CONTACT US PAGE -----x--*/
+
+/*-------- SHOPPING STEPS --------*/
+.payment__steps{
+    grid-area: 2/1/3/5;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-column-gap: .4rem;
+}
+
+.steps__box > i{
+    place-items: center;
+    font-size: 3rem;
+}
+
+.steps__box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: .2rem;
+}
+
+.steps__box > h1{
+    font-size: 1.9rem;
+}
+
+.steps__box > i{
+    margin-left: .3rem;
+
+}
+
+.steps__link{
+    font-size: .592rem;
+}
+
+.not__shopping{
+    color: var(--buttonbackground);
+}
+
+.step__1{
+    grid-area: 1/1/2/2;
+}
+
+.step__2{
+    grid-area: 2/1/3/2;
+}
+
+.step__3{
+    grid-area: 3/1/4/2;
+}
+
+/*--x----- SHOPPING STEPS -----x--*/
+
+
+/*-------- SHOPPING CART PAGE -------*/
+.horizontal__line__4{
+    grid-area: 5/1/6/5;
+    margin-top: 1.8rem;
+width: 100%;
+border: none;
+border-bottom: 1px solid black;
+}
+
+.shopping__page__details{
+    grid-area: 6/1/7/5;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 3rem;
+    margin-left: .5rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+}
+
+.shopping__page__items{
+    grid-area: 1/1/2/2;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-row-gap: 1rem;
+}
+
+/*-------- TABLE CONTAINER SECTION --------*/
+
+.table__container{
+    overflow-x:auto;
+    width: 100%;
+    border-collapse: collapse;
+    grid-area: 1/1/2/2;
+}
+
+.table__container, th, td{
+    border: 1px solid black;
+}
+
+th{
+    background-color: var(--even__table__row);
+    height: 4rem;
+}
+
+tr:nth-child(even){
+    background-color: var(--even__table__row);
+}
+
+tr:hover{
+    background-color: var(--table__hover);
+}
+
+th, td{
+    padding: 1rem;
+    text-align: left;
+}
+
+td{
+    height: 50px;
+    vertical-align: middle;
+}
+
+.quantity{
+    vertical-align: middle;
+    text-align: center;
+}
+
+/*-------- DELETE ICON --------*/
+.fa-trash-alt{
+    text-align: right;
+    margin-left: 1rem; 
+}
+
+.mink__lashes{
+    text-align: right;
+}
+/*--x----- DELETE ICON -----x--*/
+
+/*--x----- TABLE CONTAINER SECTION -----x--*/
+
+/*-------- COUPON CODE --------*/
+.coupon__code{
+    grid-area: 2/1/3/2;
+    width: 15rem;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    height: 3.4rem;
+}
+
+.coupon__code::placeholder{
+    
+    font-size: 1rem;
+    padding-left: 1.4rem;
+    margin-left: 3rem;
+}
+/*--x----- COUPON CODE -----x--*/
+
+/*-------- APPLY COUPON --------*/
+.apply__coupon{
+    grid-area: 3/1/4/2;
+    width: 15rem;
+    height: 3.4rem;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: var(--buttonbackground);
+    border: 1px solid var(--buttonbackground);
+    color: var(--light);
+}
+
+.apply__coupon:hover{
+    width: 15rem;
+    height: 3.4rem;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: var(--light);
+    border: 1px solid var(--buttonbackground);
+    color: var(--dark);
+}
+/*--x----- APPLY COUPON -----x--*/
+
+/*-------- UPDATE CART --------*/
+.update__cart{
+    grid-area: 4/1/5/2;
+    margin-top: 4rem;
+    width: 15rem;
+    vertical-align: middle;
+    height: 3.4rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.update__cart:hover{
+    margin-top: 4rem;
+    width: 15rem;
+    vertical-align: middle;
+    height: 3.4rem;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: var(--buttonbackground);
+    border: 1px solid var(--buttonbackground);
+    color: var(--light);
+}
+/*--x----- UPDATE CART -----x--*/
+
+
+.shopping__page__summary{
+    grid-area: 2/1/3/2;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+
+/*--x----- SHOPPING CART PAGE -----x--*/
 
 }
 
