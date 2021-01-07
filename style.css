@@ -1768,7 +1768,7 @@ margin-bottom: 1rem;
     margin-bottom: 1rem;
     padding-right: 6rem;
     padding-left: 6rem;
-    }
+}
 
 .place__order{
     display: flex;
@@ -1951,6 +1951,120 @@ margin-bottom: 1rem;
 }
 
 /*--x----- DIFFERENT ADDRESS DELIVERY SECTION -----x--*/
+
+/*-------- PAYMENT PAGE SECTION --------*/
+
+.payment__page{
+    grid-area: 6/1/7/5;
+}
+
+.payment__title{
+    grid-area: 1/1/2/5;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 2rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.payment__details{
+    grid-area: 2/1/3/5;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-row-gap: 2rem;
+    border: 2px solid red;
+}
+
+.payment__card__box{
+    display: grid;
+    grid-area: 1/2/2/4;
+}
+
+.checkbox__payment__card{
+    font-size: 4rem;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 1rem;
+    margin-left: -.5rem;
+}
+
+.payment__card__1{
+    grid-area: 1/2/2/3;
+    display: inline-block;
+}
+
+.payment__card__2{
+    grid-area: 1/3/2/4;
+    display: inline-block;
+}
+
+.card__form__details__1{
+    display: grid;
+    grid-area: 2/2/3/3;
+    text-transform: capitalize;
+}
+
+.card__form__details__2{
+    display: grid;
+    grid-area: 2/3/3/4;
+    text-transform: capitalize;
+}
+
+.card__form__details__3{
+    display: grid;
+    grid-area: 3/2/4/3;
+    text-transform: uppercase;
+}
+
+.card__form__details__4{
+    display: grid;
+    grid-area: 3/3/4/4;
+    text-transform: uppercase;
+}
+
+.cvc{
+    display: grid;
+    grid-area: 4/3/5/4;
+}
+
+.button__1{
+    display: grid;
+    grid-area: 5/2/6/3;
+    text-align: center;
+    background-color: var(--buttonbackground);
+    color: white;
+    width: 80%;
+}
+
+.button__2{
+    display: grid;
+    grid-area: 5/3/6/4;
+    text-align: center;
+    color: white;
+    width: 80%;
+    background-color: var(--buttonbackground);
+}
+
+.payment__card__2 .fab, .payment__card__1 .fab, .payment__card__1 .far{
+    font-size: 2rem;
+}
+
+.payment__card__form{
+    grid-area: 2/2/3/4;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 1rem;
+}
+
+.form__input{
+    width: 80%;
+}
+
+.payment__card__1 , .payment__card__2{
+    margin-bottom: 2rem;
+}
+
+/*--x----- PAYMENT PAGE SECTION -----x--*/
 
 /*-------- MEDIA QUERIES FOR 700PX --------*/
 
@@ -4278,7 +4392,7 @@ margin-right: 1rem;
 .btn__place__order{
     background-color: var(--greenapple);
     height: 3rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
     padding-right: 4.4rem;
