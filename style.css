@@ -1698,17 +1698,59 @@ margin-bottom: 1rem;
     color: var(--light);
 }
 
-/* .btn__checkout:hover{
-background-color: var(--);
-}
-
-.btn__checkout > a:hover{
-    background-color: var(--darkgreen);
-} */
-
-/*-------- PROCEED TO CHECKOUT BUTTON --------*/
+/*--x----- PROCEED TO CHECKOUT BUTTON -----x--*/
 
 /*--x----- SHOPPING CART PAGE -----x--*/
+
+/*-------- CHECK OUT PAGE SECTION --------*/
+.checkout__page{
+    grid-area: 6/1/7/5;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 2rem;
+}
+
+/*-------- BILLING DETAILS --------*/
+.billing__details{
+grid-area: 1/1/2/2;
+border: 2px solid black;
+padding: 1rem;
+}
+
+.name__details{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 1rem;
+    
+}
+
+.first__name__info{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-column-gap: 3rem;
+    /* margin-top: 2rem; */
+}
+
+.last__name__info{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-column-gap: 3rem;
+    /* margin-top: 2rem; */
+}
+/*-------- BILLING DETAILS --------*/
+
+/*-------- DELIVER TO ADDRESS --------*/
+.deliver__to__address{
+    grid-area: 1/2/2/3;
+    border: 2px solid black;
+    padding: 1rem;
+}
+/*-------- DELIVER TO ADDRESS --------*/
+
+/*--x----- CHECK OUT PAGE SECTION -----x--*/
 
 /*-------- MEDIA QUERIES FOR 700PX --------*/
 
@@ -2817,50 +2859,49 @@ margin-bottom: 1rem;
     .logo__container{
         display: grid;
         grid-area: 2/1/3/2;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(3,1fr);
+        place-items: center;
+        grid-template-columns: repeat(2,1fr);
+        /* grid-template-rows: repeat(3,1fr); */
         margin: 0;
         padding: 0;
-        grid-gap: .01rem;
+        grid-row-gap: .1rem;
     }
 
     .logo__box{
         grid-area: 1/1/2/2;
         margin: 0;
         padding: 0;
-        margin-left: 7rem;
     }
     
     /*-------- LUXEBEAUTYHOUSE PICTURE LOGO --------*/
     .luxeBeautyHouseLogo{
-        max-width: 90%; 
-        height: 90%;
-        max-height: 10rem;
+        max-width: 70%; 
+        height: 70%;
+        max-height: 9rem;
+        margin-left: 2rem;
     }
     /*--x----- LUXEBEAUTYHOUSE PICTURE LOGO -----x--*/
     
     .input__search{
-        grid-area: 2/1/3/2;
-        place-items: center;
-        margin-left: 3rem;
-        align-content: center;
+        grid-area: 2/1/3/3;
+        display: inline-block;
     }
     
     .search__input{
         display: inline-block;
-        width: 82%;    
+        width: 80%;    
         border-left: none;
         border-right: none;
         border-top: none;
-        margin-top: 4rem;
-        height: 2rem;
+        margin-top: .5rem;
     }
-    
+
     .icons{
-        grid-area: 3/1/4/2;
+        grid-area: 1/2/2/3;
     display: inline;
     text-align: center;
-    margin-top: 3.8rem;
+    place-items: center;
+    margin-top: 2rem;
     }
 
     .icons > .cart, .icons > .heart, .icons > .whatsapp{
