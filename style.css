@@ -865,7 +865,10 @@ nav .dropdown a:hover{
     width: 19.5rem;
     font-size: 1rem;
     font-weight: bold;
+    color: white;
 }
+
+
 
 .create:hover{
     background-color: white;
@@ -875,6 +878,7 @@ nav .dropdown a:hover{
 .sign__in:hover{
     background-color: var(--buttonbackground);
     border: 2px solid var(--buttonbackground);
+    color: white;
 }
 /*--x----- LOGIN PAGE SECTION -----x--*/
 
@@ -1862,6 +1866,7 @@ margin-bottom: 1rem;
 .order__title{
     text-align: center;
 }
+
 /*-------- DELIVER TO ADDRESS --------*/
 
 /*--x----- CHECK OUT PAGE SECTION -----x--*/
@@ -1876,7 +1881,7 @@ margin-bottom: 1rem;
     margin-top: 2rem;
 }
 
-.login__container{
+.delivery__details__container{
     grid-area: 1/2/2/5;
     place-items: center;
     display: grid;
@@ -1884,6 +1889,65 @@ margin-bottom: 1rem;
     grid-gap: .1rem;
     border: 2px solid black;
     padding: 1rem;
+}
+
+.delivery__title{
+    grid-area: 1/1/2/2;
+}
+
+.delivery__form{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: .5rem;
+    margin-top: 1rem;
+}
+
+.delivery__input{
+    width: 30rem;
+    border: 2px solid black;
+    height: 2rem;
+}
+
+.phone__email__box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: .5rem;
+    margin-top: 1rem;
+}
+
+.phone__info{
+    display: grid;
+}
+
+.delivery__input__2{
+    width: 14.8rem;
+    border: 2px solid black;
+    height: 2rem;
+}
+
+.btn__save{
+    place-items: center;
+    height: 3rem;
+    width: 15rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.btn__save:hover{
+    background-color: var(--buttonbackground);
+    border: 2px solid var(--buttonbackground);
+    color: white;
+}
+
+.Underlined__blue__link{
+    color: blue;
+    text-decoration: underline;
+}
+
+.Underlined__blue__link:hover{
+    color: black;
+    text-decoration: none;
 }
 
 /*--x----- DIFFERENT ADDRESS DELIVERY SECTION -----x--*/
@@ -4181,17 +4245,44 @@ margin-right: 1rem;
     margin-top: 2rem;
 }
 
-.login__container{
+.delivery__details__container{
     grid-area: 1/2/2/3;
-    /* place-items: center; */
     display: grid;
     grid-template-columns: repeat(1,1fr);
     grid-gap: .1rem;
     border: 2px solid black;
     padding: 1rem;
-    /* margin-left: 1rem;
-    margin-right: 1rem; */
+    margin-left: 1rem;
+    
 }
+
+.delivery__input{
+    width: 20rem;
+    border: 2px solid black;
+    height: 2rem;
+}
+
+.phone__email__box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: .5rem;
+    margin-top: 1rem;
+}
+
+.phone__info{
+    display: grid;
+}
+
+.delivery__input__2{
+    width: 9.7rem;
+    border: 2px solid black;
+    height: 2rem;
+}
+
+.checkout__terms__policy{
+    font-size: .7rem;
+}
+
 
 /*--x----- DIFFERENT ADDRESS DELIVERY SECTION -----x--*/
 

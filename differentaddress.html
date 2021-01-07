@@ -101,24 +101,66 @@ rel="stylesheet">
          <!-------- DELIVERY INFORMATION SECTION -------->
     <section class="delivery__info__container">
 
-        <div class="login__container">
-            <div class="email__info">
-                <label for="email__address">Email Address</label>
-                <input type="text" id="email__address" placeholder="abcdefgh@mnbvcxzqa.com">
+        <div class="delivery__details__container">
+            <h1 class="delivery__title">Deliver to this address <hr> </h1>
+            
+
+            <div class="delivery__form">
+                <label for="country">Country</label>
+                <select id="country" class="delivery__input">
+                    <option value="0">South Africa</option>
+                    <option value="1">South America</option>
+                    <option value="2">South Asia</option>
+                    <option value="3">South Republic</option>
+                </select>
             </div>
-           <div class="password__info">
-            <label for="password">Password</label>
-            <input type="text" id="password" placeholder="*******************">
-           </div>
-           <a href="forgotpassword.html" class="forgot__password">
-               Forgot your password ?
-           </a> 
-           <a href="./login.html">  
-           <input type="button" value="SIGN IN" class="sign__in"> 
-            </a> 
-           <p class="or">OR</p>
-           <a href="./register.html">
-           <input type="button" value="CREATE" class="create"> 
+
+            <div class="delivery__form">
+                <label for="street__address">Street Address</label>
+                <input type="text" id="street__address" class="delivery__input" placeholder="Enter Street Address">
+            </div>
+
+            <div class="delivery__form">
+                <label for="apartment__info">Apartment, suite, unit, etc.</label>
+                <input type="text" id="apartment__info" class="delivery__input" placeholder="Enter Apartment">
+            </div>
+
+            <div class="delivery__form">
+                <label for="town__city">Town / City *</label>
+                <input type="text" id="town__city" class="delivery__input" placeholder="Enter Town / City">
+            </div>
+
+            <div class="delivery__form">
+                <label for="street__address">Province</label>
+                <input type="text" id="street__address" class="delivery__input" placeholder="Enter Province">
+            </div>
+
+            <div class="delivery__form">
+                <label for="postcode__zip">Post Code / ZIP *</label>
+                <input type="text" id="postcode__zip" class="delivery__input" placeholder="Enter PostCode">
+            </div>
+
+            <div class="phone__email__box">
+                <div class="phone__info">
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" class="delivery__input__2" placeholder="Enter Phone">    
+                </div>
+                <div class="phone__info">
+                    <label for="email">Email Address</label>
+                <input type="text" id="email" class="delivery__input__2" placeholder="Enter Email-Address">
+                </div>
+            </div>
+
+            <div class="checkout__terms__policy checkout__margin__top">
+                <input type="checkbox" class="checkout__checkbox">
+                <label for="company__name"> <a href="./differentaddress.html">
+                    I agree to the <a class="Underlined__blue__link" href="./terms.html">Terms of Use </a>  and
+                    <a href="./privacy.html" class="Underlined__blue__link">Privacy Policy</a>.
+                    </a>  
+                    </label>
+            </div>
+           <a href="./checkoutpage.html" class="btn__margin__top">
+           <input type="button" value="SAVE" class="btn__save"> 
         </a>
         </div>
 
