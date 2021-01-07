@@ -121,36 +121,217 @@ rel="stylesheet">
         <!-------- PRODUCT DETAILS SECTION -------->
         
 <!-------- HORIZONTAL LINE 2 -------->
-         <span class="horizontal__line__2"></span>
+         <span class="horizontal__line__4"></span>
 <!--x----- HORIZONTAL LINE 2 -----x-->
 
 <!-------- CHECK OUT CONTAINER SECTION -------->
 <section class="checkout__page">
 
-    <!-------- DELIVER TO ADDRESS COLUMN-------->
+<!-------- BILLING DETAILS COLUMN-------->
 <div class="billing__details">
 <h1>BILLING DETAILS</h1>
 <hr>
-<div class="name__details">
+<div class="name__details checkout__margin__top">
     <div class="first__name__info">
         <label for="first__name">firstname *</label>
-        <input type="text" value="Jane Monday">
+        <input type="text" value="Jane Monday" class="checkout__input">
     </div>
     <div class="last__name__info">
         <label for="last__name">lastname *</label>
-        <input type="text" value="Doe">
+        <input type="text" value="Doe" class="checkout__input">
     </div>
 </div>
+
+<div class="company__name__info checkout__margin__top">
+    <label for="company__name">Company name (optional)</label>
+    <input type="text" value="Some other company name here is optional" class="checkout__input__2">
 </div>
-<!--x----- DELIVER TO ADDRESS COLUMN -----x-->
+
+<div class="checkout__margin__top select__info">
+    <label for="company__name">Country / Region *</label>
+<select name="country__region" id="country__region">
+    <option value="0">South Africa</option>
+    <option value="1">USA</option>
+    <option value="0">Jamaica</option>
+    <option value="0">Denmark</option>
+    <option value="0">South Asia</option>
+</select>
+</div>
+
+<div class="checkout__margin__top">
+    <label for="company__name">Street address *</label>
+    <input type="text" value="10 Harvery Street" class="checkout__input__2">
+</div>
+
+<div class="checkout__margin__top">
+    <label for="company__name">Apartment, suite, unit, etc. (optional)</label>
+    <input type="text" value="Unit 16110" class="checkout__input__2">
+</div>
+
+<div class="checkout__margin__top">
+    <label for="company__name">Town / City *</label>
+    <input type="text" value="Guateng" class="checkout__input__2">
+</div>
+
+<div class="checkout__margin__top">
+    <label for="company__name">Province *</label>
+    <input type="text" value="Johanesbourg (shouldn't this be a dropdown list???)" class="checkout__input__2">
+</div>
+
+<div class="checkout__margin__top">
+    <label for="company__name">Postcode / ZIP *</label>
+    <input type="text" value="7J4 Q1P" class="checkout__input__2">
+</div>
+
+<div class="checkout__margin__top">
+    <label for="company__name">Phone *</label>
+    <input type="text" value="+12345678910" class="checkout__input__2">
+</div>
+
+<div class="checkout__margin__top">
+    <label for="company__name">Email *</label>
+    <input type="text" value="Jane.doe@example.com" class="checkout__input__2">
+</div>
+
+<div class="checkout__margin__top">
+    <input type="checkbox" class="checkout__checkbox">
+    <label for="company__name"> <a href="./differentaddress.html">
+         Deliver to a different address?
+        </a>  
+        </label>
+</div>
+
+<div class="checkout__margin__top">
+    <label for="company__name">Order notes (optional)</label>
+    <textarea name="" id="" cols="30" rows="5" class="textarea__margin__top checkout__textarea__width">
+
+    </textarea>
+</div>
+</div>
+<!--x----- BILLING DETAILS COLUMN -----x-->
+
+<!-------- ADDRESS AND ORDER COLUMN -------->
+
+<div class="address__and__order__container">
 
 <!-------- DELIVER TO ADDRESS COLUMN -------->
 <div class="deliver__to__address">
-<h1>DELIVER TO ADDRESS</h1>
-<hr>
+    <h1>DELIVER TO ADDRESS</h1>
+    <hr>
+    <div class="address__margin checkout__margin__top">
+        <label for="country__region">Country / Region *</label>
+        <input type="text" value="South Africa" class="checkout__input__2">
+    </div>
+    
+    <div class="checkout__margin__top">
+        <label for="company__name">Street address *</label>
+        <input type="text" value="10 Harvery Street" class="checkout__input__2">
+    </div>
+    
+    <div class="checkout__margin__top">
+        <label for="company__name">Apartment, suite, unit, etc. (optional)</label>
+        <input type="text" value="Unit 16110" class="checkout__input__2">
+    </div>
+    
+    <div class="checkout__margin__top">
+        <label for="company__name">Town / City *</label>
+        <input type="text" value="Guateng" class="checkout__input__2">
+    </div>
+    
+    <div class="checkout__margin__top">
+        <label for="company__name">Province *</label>
+        <input type="text" value="Johanesbourg (shouldn't this be a dropdown list???)" class="checkout__input__2">
+    </div>
+    
+    <div class="checkout__margin__top">
+        <label for="company__name">Postcode / ZIP *</label>
+        <input type="text" value="7J4 Q1P" class="checkout__input__2">
+    </div>
+    
+    <div class="checkout__margin__top">
+        <label for="company__name">Phone *</label>
+        <input type="text" value="+12345678910" class="checkout__input__2">
+    </div>
+    </div>
+    <!--x----- DELIVER TO ADDRESS COLUMN -----x-->
+
+    <!-------- YOUR ORDER COLUMN -------->
+<div class="your__address">
+    <h1 class="order__title">YOUR ORDER</h1>
+    
+    <!-------- SUBTOTAL SECTION -------->
+    <div class="shipping">
+        <div class="shipping__title__2">
+            Subtotal
+        </div>
+        <div class="shipping__others__2">
+            <div> R1540 </div>
+        </div>
+    </div>
+    <hr class="white__horizontal">
+<!--x----- SUBTOTAL SECTION -----x-->
+
+ <!-------- SUBTOTAL SECTION -------->
+ <div class="shipping">
+    <div class="shipping__title__2">
+        <div>
+            Palette
+        </div>
+        <div>Shipping</div>
+    </div>
+    <div class="shipping__others__2">
+        <div>
+            R400
+        </div>
+        <div>Rate:400</div>
+    </div>
+</div>
+<hr class="white__horizontal">
+<!--x----- SUBTOTAL SECTION -----x-->
+
+<!-------- TOTAL SHIPPING SECTION -------->
+<div class="shipping">
+    <div class="shipping__title__2">
+        Total
+    </div>
+    <div class="shipping__others__2">
+         R1992 (includes R52 VAT) 
+    </div>
+</div>
+<hr class="white__horizontal">
+<!--x----- TOTAL SHIPPING SECTION -----x-->
+
+<!-------- NOTE SECTION -------->
+<div class="note__section">
+    Note: Shipping and taxes are estimated and will 
+    be updated during checkout
+    based on your billing and shipping information. 
+</div>
+<!--x----- NOTE SECTION -----x-->
+
+<!-------- PRIVACY POLICY -------->
+<div class="note__section">
+    <a href="./policy.html">privacy policy</a>
+</div>
+<!--x----- PRIVACY POLICY -----x-->
+
+<!-------- PROCEED TO PLACE ORDER BUTTON -------->
+<div class="place__order">
+    <button class="btn__place__order">
+        <a href="./orderpage.html"> PLACE ORDER </a>
+    </button>
+</div>
+
+<!--x----- PROCEED TO PLACE ORDER BUTTON -----x-->
+
+   
+    </div>
+    <!--x----- YOUR ORDER COLUMN -----x-->
 
 </div>
-<!--x----- DELIVER TO ADDRESS COLUMN -----x-->
+<!--x----- ADDRESS AND ORDER COLUMN -----x-->
+
+
 
 </section>
 <!--x----- CHECK OUT CONTAINER SECTION -----x-->

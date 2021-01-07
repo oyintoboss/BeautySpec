@@ -28,9 +28,47 @@ a{
 
 a:hover{
     text-decoration: none;
-    /* color: var(--greenapple); */
 }
 
+label{
+    margin-bottom: .4rem;
+}
+
+.checkout__input{
+    width: 90%;
+    border: none;
+    font-size: 1.1rem;
+    border-bottom: 2px solid black;
+}
+
+.checkout__input__2{
+    width: 95%;
+    border: none;
+    font-size: 1.1rem;
+    border-bottom: 2px solid black;
+}
+
+.checkout__checkbox{
+    border: 2px solid black;
+}
+
+.textarea__margin__top{
+    margin-top: .2rem;
+}
+
+.checkout__textarea__width{
+    width: 95%;
+    border: 2px solid black;
+}
+
+.company__name__info{
+    margin-top: 1rem;  
+}
+
+.note__section > a{
+    color: white;
+    text-decoration: underline;
+}
 
 /*--x----- UNIVERSAL CLASSES -----x--*/
 
@@ -1650,6 +1688,11 @@ hr{
     border: none;
     border-top: 1px solid black;
 }
+
+.white__horizontal{
+    border: none;
+    border-top: 1px solid white;
+}
 /*-------- HORIZONTAL SHOPPING LINE --------*/
 
 .shipping{
@@ -1700,6 +1743,29 @@ margin-bottom: 1rem;
 
 /*--x----- PROCEED TO CHECKOUT BUTTON -----x--*/
 
+/*-------- PROCEED TO PLACE ORDER BUTTON --------*/
+.btn__place__order{
+    background-color: var(--greenapple);
+    height: 3rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-right: 6rem;
+    padding-left: 6rem;
+    }
+
+.place__order{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+    
+.btn__place__order > a{
+    color: var(--light);
+}
+    
+/*--x----- PROCEED TO PLACE ORDER BUTTON -----x--*/
+
 /*--x----- SHOPPING CART PAGE -----x--*/
 
 /*-------- CHECK OUT PAGE SECTION --------*/
@@ -1718,13 +1784,28 @@ margin-bottom: 1rem;
 grid-area: 1/1/2/2;
 border: 2px solid black;
 padding: 1rem;
+margin-top: 1rem;
+margin-bottom: 1rem;
 }
 
 .name__details{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-row-gap: 1rem;
-    
+
+}
+
+.checkout__margin__top{
+    margin-top: 1rem;  
+}
+
+.select__info{
+    display: grid;
+    width: 95%;
+}
+
+#country__region{
+    border: 2px solid black;
 }
 
 .first__name__info{
@@ -1743,10 +1824,31 @@ padding: 1rem;
 /*-------- BILLING DETAILS --------*/
 
 /*-------- DELIVER TO ADDRESS --------*/
-.deliver__to__address{
+
+.address__and__order__container{
     grid-area: 1/2/2/3;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-row-gap: 2rem;
+    padding: 1rem;
+}
+
+.deliver__to__address{
+    grid-area: 1/1/2/2;
     border: 2px solid black;
     padding: 1rem;
+}
+
+.your__address{
+    grid-area: 2/1/3/2;
+    border: 2px solid black;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+}
+
+.order__title{
+    text-align: center;
 }
 /*-------- DELIVER TO ADDRESS --------*/
 
@@ -2875,8 +2977,8 @@ margin-bottom: 1rem;
     
     /*-------- LUXEBEAUTYHOUSE PICTURE LOGO --------*/
     .luxeBeautyHouseLogo{
-        max-width: 70%; 
-        height: 70%;
+        max-width: 80%; 
+        height: 80%;
         max-height: 9rem;
         margin-left: 2rem;
     }
@@ -3948,6 +4050,90 @@ margin-bottom: 1rem;
 /*-------- PROCEED TO CHECKOUT BUTTON --------*/
 
 /*--x----- SHOPPING CART PAGE -----x--*/
+
+/*-------- CHECK OUT PAGE SECTION --------*/
+.checkout__page{
+    grid-area: 6/1/7/5;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 2rem;
+}
+
+/*-------- BILLING DETAILS --------*/
+.billing__details{
+grid-area: 1/1/2/2;
+border: 2px solid black;
+padding: 1rem;
+}
+
+.name__details{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 1rem;
+    margin-top: 1rem;  
+}
+
+.first__name__info{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-column-gap: 3rem;
+}
+
+.last__name__info{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-column-gap: 3rem;
+}
+
+.company__name__info{
+    margin-top: 1rem;  
+}
+
+/*-------- BILLING DETAILS --------*/
+
+/*-------- ADDRESS AND ORDER COLUMN --------*/
+
+.address__and__order__container{
+    grid-area: 2/1/3/2;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-row-gap: 2rem;
+    padding: 1rem;
+}
+
+.deliver__to__address{
+    grid-area: 1/1/2/2;
+    border: 2px solid black;
+    padding: 1rem;
+}
+
+.your__address{
+    grid-area: 2/1/3/2;
+    border: 2px solid black;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+}
+
+/*-------- ADDRESS AND ORDER COLUMN --------*/
+
+/*--x----- CHECK OUT PAGE SECTION -----x--*/
+
+/*-------- PROCEED TO PLACE ORDER BUTTON --------*/
+.btn__place__order{
+    background-color: var(--greenapple);
+    height: 3rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-right: 4.4rem;
+    padding-left: 4.4rem;
+    }
+    
+/*--x----- PROCEED TO PLACE ORDER BUTTON -----x--*/
 
 }
 
