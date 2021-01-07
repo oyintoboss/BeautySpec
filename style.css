@@ -3025,6 +3025,58 @@ margin-bottom: 1rem;
 
 /*--x----- SHOPPING CART PAGE -----x--*/
 
+/*-------- DIFFERENT ADDRESS DELIVERY SECTION --------*/
+
+.delivery__info__container{
+    grid-area: 6/1/7/5;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: .01rem;
+    margin-top: 2rem;
+}
+
+.delivery__details__container{
+    grid-area: 1/2/2/3;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: .1rem;
+    border: 2px solid black;
+    padding: 1rem; 
+}
+
+.delivery__input{
+    width: 30rem;
+    border: 2px solid black;
+    height: 2rem;
+}
+
+.phone__email__box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: .5rem;
+    margin-top: 1rem;
+}
+
+.phone__info{
+    display: grid;
+}
+
+.delivery__input__2{
+    width: 14.8rem;
+    border: 2px solid black;
+    height: 2rem;
+}
+
+.checkout__terms__policy{
+    font-size: 1.1rem;
+}
+
+
+/*--x----- DIFFERENT ADDRESS DELIVERY SECTION -----x--*/
+
+
 }
 
 /*--x----- MEDIA QUERIES FOR 700PX -----x--*/
