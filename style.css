@@ -173,10 +173,11 @@ border-right: none;
 
 /*-------- LUXEBEAUTYHOUSE PICTURE LOGO --------*/
 .luxeBeautyHouseLogo{
-    max-width: 90%; 
+    width: 6rem; 
+    max-width: 100%;
     margin-top: 1rem;
-    height: 90%;
-    max-height: 8rem;
+    height: 6rem;
+    max-height: 10rem;
 }
 /*--x----- LUXEBEAUTYHOUSE PICTURE LOGO -----x--*/
 
@@ -192,11 +193,17 @@ border-right: none;
     border-right: none;
     border-top: none;
     margin-top: 4rem;
-    height: 2rem;   
+    height: 2rem;
+    outline: none;
+    font-size: 1.2rem;
+    padding-left: .5rem;
+}
+
+.search__input:focus {
+    border-bottom-color: var(--buttonbackground);
 }
 
 .search__input::placeholder{
-    /* color: red; */
     margin: 2rem;
     padding-left: .6rem;
     padding-bottom: 2rem;
@@ -230,7 +237,7 @@ nav{
 
 /*-------- NAVIGATION MENU CONTENT SECTION --------*/
 nav .content{
-    background-color: var(--greyapple);
+    background-color: var(--light);
     display: grid;
     place-items: center;
     grid-auto-flow: column;
@@ -284,7 +291,7 @@ nav .content .links{
     display: grid;
     grid-gap: 15px;
     grid-auto-flow: column;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-decoration: none;
     place-items: center;
     grid-auto-columns: minmax(min-content, 195px);
@@ -296,7 +303,7 @@ nav .content .links .active{
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 2.2rem;
-    padding-bottom: 2.3rem;
+    padding-bottom: 3.8rem;
 }
 
 nav .content .links a:hover{
@@ -305,7 +312,7 @@ nav .content .links a:hover{
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 2.2rem;
-    padding-bottom: 2.3rem;
+    padding-bottom: 3.8rem;
 }
 /*--x----- NAVIGATION MENU LINK SECTION -----x--*/
 
@@ -548,14 +555,6 @@ nav .dropdown a:hover{
     border-radius: 34px 34px;
 }
 
-/* .cart__product:hover{
-    grid-area: 8/8/9/9;
-    margin-top: 10rem;
-    padding-top: 3.3rem;
-    margin-right: .5rem;
-    border-radius: 2rem;
-} */
-
 .back{
     grid-area: 1/1/2/2;
     margin-right: 30rem;
@@ -757,7 +756,7 @@ nav .dropdown a:hover{
 .info__2{
     display: grid;
     grid-template-rows: repeat(2,1fr);
-    grid-gap: .5rem;
+    grid-column-gap: .2rem;
     padding-top: 3rem;
 }
 
@@ -797,7 +796,14 @@ nav .dropdown a:hover{
     border-left: none;
     border-right: none;
     height: 3rem;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    outline: none;
     width: 100%;
+}
+
+.input__email:focus, .input__email:hover{
+    border-bottom-color: var(--buttonbackground);
 }
 
 .subscribe__btn{
@@ -806,7 +812,9 @@ nav .dropdown a:hover{
     width: 30%;
     padding-top: .4rem;
     padding-bottom: .9rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    background-color: var(--buttonbackground);
+    color: var(--light)
 }
 
 .subscribe__btn:hover{
@@ -814,11 +822,11 @@ nav .dropdown a:hover{
     width: 30%;
     padding-top: .4rem;
     padding-bottom: .9rem;
-   background-color: var(--buttonbackground);
-   color: var(--light);
-   border: var(--dark);
-   font-size: 1.2rem;
+   background-color: var(--light);
+   color: var(--dark);
+   border: 2px solid var(--buttonbackground);
 }
+
 /*--x----- FOOTER COLUMN 3 -----x--*/
 
 /*-------- LOGIN PAGE SECTION --------*/
@@ -2136,8 +2144,10 @@ margin-bottom: 1rem;
 /*-------- LUXEBEAUTYHOUSE PICTURE LOGO --------*/
 .luxeBeautyHouseLogo{
     max-width: 90%; 
+    margin-top: 1rem;
     height: 90%;
-    max-height: 10rem;
+    place-items: center;
+    max-height: 5rem;
 }
 /*--x----- LUXEBEAUTYHOUSE PICTURE LOGO -----x--*/
 
@@ -2157,7 +2167,7 @@ margin-bottom: 1rem;
     border-top: none;
     margin-top: 4rem;
     height: 2rem;
-    /* padding-bottom: ; */
+    outline: none;
 }
 
 .search__input::placeholder{
@@ -3378,7 +3388,6 @@ margin-bottom: 1rem;
         grid-area: 2/1/3/2;
         place-items: center;
         grid-template-columns: repeat(2,1fr);
-        /* grid-template-rows: repeat(3,1fr); */
         margin: 0;
         padding: 0;
         grid-row-gap: .1rem;
@@ -3392,10 +3401,10 @@ margin-bottom: 1rem;
     
     /*-------- LUXEBEAUTYHOUSE PICTURE LOGO --------*/
     .luxeBeautyHouseLogo{
-        max-width: 80%; 
-        height: 80%;
-        max-height: 9rem;
-        margin-left: 2rem;
+        max-width: 90%; 
+    margin-top: 1rem;
+    height: 90%;
+    max-height: 5rem;
     }
     /*--x----- LUXEBEAUTYHOUSE PICTURE LOGO -----x--*/
     
@@ -3544,7 +3553,7 @@ margin-bottom: 1rem;
         min-height: 20rem;
         min-width: 17rem;
         height: 20rem;
-        width: 15rem;
+        width: 21rem;
         background: url('./assets/images/home/new1\ \(1\).jpg');
         background-size: cover;
         background-position: center; 
@@ -3562,7 +3571,7 @@ margin-bottom: 1rem;
         min-height: 20rem;
         min-width: 17rem;
         height: 20rem;
-        width: 15rem;
+        width: 21rem;
         background: url('./assets/images/home/new1\ \(2\).jpg');
         background-size: cover;
         background-position: center; 
@@ -3580,7 +3589,7 @@ margin-bottom: 1rem;
         min-height: 20rem;
         min-width: 17rem;
         height: 20rem;
-        width: 15rem;
+        width: 21rem;
         background: url('./assets/images/home/new1\ \(3\).jpg');
         background-size: cover;
         background-position: center; 
@@ -3598,7 +3607,7 @@ margin-bottom: 1rem;
         min-height: 20rem;
         min-width: 17rem;
         height: 20rem;
-        width: 15rem;
+        width: 21rem;
         background: url('./assets/images/home/new1\ \(4\).jpg');
         background-size: cover;
         background-position: center; 
@@ -3746,8 +3755,8 @@ margin-bottom: 1rem;
     .footer__container{
         grid-area: 7/1/8/2;
         display: grid;
-        align-content: center;
-        grid-gap: 1rem;
+        grid-template-columns: repeat(4,1fr);
+        grid-row-gap: 1rem;
         place-items: center;
         padding: 0;
         margin: 0;
@@ -3762,7 +3771,7 @@ margin-bottom: 1rem;
         grid-area: 1/1/2/2;
         display: grid;
         margin-left: 3rem;
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
     }
     
     .info__1{
@@ -3783,7 +3792,7 @@ margin-bottom: 1rem;
     .column__2{
         grid-area: 2/1/2/2;
         display: grid;
-        margin-bottom: 3rem;
+        margin-bottom: .1rem;
     }
     
     .info__2{
@@ -3813,11 +3822,11 @@ margin-bottom: 1rem;
     
     .info__3{
         display: grid;
-        grid-template-rows: repeat(2,1fr);
-        grid-gap: .5rem;
+        grid-template-rows: repeat(3,1fr);
+        grid-column-gap: .5rem;
         padding-top: 3rem;
     }
-    
+
     .input__email{
         border-top: none;
         border-left: none;
@@ -3832,20 +3841,23 @@ margin-bottom: 1rem;
         width: 80%;
         padding-top: .4rem;
         padding-bottom: .9rem;
-        font-size: 1rem;
+        font-size: 1.2rem;
+        background-color: var(--buttonbackground);
+        color: var(--light);
+        text-align: center;
     }
 
     
     .subscribe__btn:hover{
     height: 2.5rem;
     width: 80%;
-    padding-top: .6rem;
+    padding-top: .4rem;
     padding-bottom: .9rem;
-    background-color: var(--buttonbackground);
-    color: var(--light);
-    border: var(--dark);
-    font-size: 1rem;
+   background-color: var(--light);
+   color: var(--dark);
+   border: 2px solid var(--buttonbackground);
     }
+
     /*--x----- FOOTER COLUMN 3 -----x--*/
     
     /*--x----- FOOTER SECTION -----x--*/
@@ -4629,17 +4641,13 @@ margin-right: 1rem;
     grid-area: 1/1/2/2;
     grid-template-columns: repeat(1,1fr);
     grid-row-gap: .2rem;
-    /* margin-left: 1.5rem;
-    margin-right: 1rem;
-    place-items: center; */
 }
 
 .checkbox__payment__card{
     font-size: 4rem;
     height: 2rem;
     width: 2rem;
-    /* margin-right: 1rem;
-    margin-left: -.5rem; */
+    margin-left: -.5rem; 
 }
 
 .payment__card__1{
