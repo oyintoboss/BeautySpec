@@ -2,7 +2,71 @@
 @import url("cssvariable.css");
 /*-------- CSS VARIABLE LINK --------*/
 
+/*-------- CSS FONTS LINK --------*/
+@import url("fonts.css");
+/*-------- CSS FONTS LINK --------*/
+
 /*--------  --------*/
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?ubwqsy');
+    src:  url('fonts/icomoon.eot?ubwqsy#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?ubwqsy') format('truetype'),
+      url('fonts/icomoon.woff?ubwqsy') format('woff'),
+      url('fonts/icomoon.svg?ubwqsy#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-twitter-brands:before {
+    content: "\e900";
+  }
+  .icon-facebook-f-brands:before {
+    content: "\e901";
+  }
+  .icon-instagram-brands:before {
+    content: "\e902";
+  }
+  .icon-envelope-regular:before {
+    content: "\e903";
+  }
+  .icon-caret-down-solid:before {
+    content: "\e904";
+  }
+  .icon-search-solid:before {
+    content: "\e905";
+  }
+  .icon-heart-regular:before {
+    content: "\e906";
+  }
+  .icon-cart-plus-solid:before {
+    content: "\e907";
+  }
+  .icon-user-solid:before {
+    content: "\e908";
+  }
+  .icon-sign-in-alt-solid:before {
+    content: "\e909";
+  }
+  
+
 /*--x-----  -----x--*/
 
 /*-------- UNIVERSAL CLASSES --------*/
@@ -10,6 +74,7 @@
 .fas{
     font-size: 2rem;
 }
+
 
 *{
     margin: 0;
@@ -303,7 +368,7 @@ nav .content .links .active{
     color: var(--light);
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-top: 2.2rem;
+    padding-top: 1rem;
     padding-bottom: 3.8rem;
 }
 
@@ -312,7 +377,7 @@ nav .content .links a:hover{
     color: var(--light);
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-top: 2.9rem;
+    padding-top: 1.7rem;
     padding-bottom: 3.1rem; 
 }
 /*--x----- NAVIGATION MENU LINK SECTION -----x--*/
