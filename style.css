@@ -86,6 +86,28 @@ label{
     margin-top: 2rem;
 }
 
+/*-------- TOP SCROLL SECTION --------*/
+#btn__scroll i{
+    /* display: none; */
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    font-size: 45px;
+    background: var(--dark);
+    color: white;
+    padding: 7px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.top__scroll i:hover, #btn__scroll i:hover{
+    background: var(--buttonbackground);
+    transition: .5s;
+}
+
+/*--x----- TOP SCROLL SECTION -----x--*/
+
 /*--x----- UNIVERSAL CLASSES -----x--*/
 
 .wrapper{
