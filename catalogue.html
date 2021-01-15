@@ -26,65 +26,89 @@ rel="stylesheet">
 <body>
     <!-------- WRAPPER CONTAINER BEGINS -------->
     <div class="wrapper">
-        <!-------- LOGIN AND REGISTER SECTION -------->
-        <div class="account__container">
-            <div class="link_register">
-                <span><i class="fas fa-user-circle"></i></span>
-               <a href="register.html">Register</a> 
-            </div>
-            <div class="link_login">
-                <span><i class="fas fa-sign-in-alt"></i></span>
-                <a href="login.html">Login</a> 
-            </div>
-        </div>
-         <!--x----- LOGIN AND REGISTER SECTION -----x-->
-
-          <!-------- HORIZONTAL LINE -------->
-        <span class="horizontal__line"></span>
-        <!--x----- HORIZONTAL LINE -----x-->
-
-        <!-------- LOGO SECTION -------->
-        <div class="logo__container">
-            
-                <a href="index.html" class="logo__box"> <img src="./assets/images/home/luxeBeautyHouseLogo.jpg" class="luxeBeautyHouseLogo" alt="LuxeBeauty House Logo"> </a>
-            
-            <span class="input__search"><input type="text" name="" id="" class="search__input" placeholder="I'm shopping for ...">
-            <i class="fas fa-search "></i>
-            </span>
-            <div class="icons">
-               <span class="cart"> <i class="fas fa-cart-plus"></i></span> 
-               <span class="heart"><i class="far fa-heart"></i></span> 
-               <span class="whatsapp"><i class="fab fa-whatsapp"></i></span> 
-            </div>
-        </div>
-        <!--x----- LOGO SECTION -----x-->
-
-        <!-------- NAVIGATION MENU SECTION -------->
-        <nav>
-            <div class="content">               
-                <div class="links">
-                    <a href="" class="active">Home</a>
-                    <a href="./index.html#New">New  </a>
-                    <a href="shop.html">  Shop <i class="fas fa-caret-down"></i> </a>
-                    <a href="catalogue.html">Catalogue</a>
-                    <a href="about_us.html">About Us</a>
-                    <a href="contact_us.html">Contact Us</a>
+                <!-------- LOGIN AND REGISTER SECTION -------->
+                <div class="account__container">
+                    <div class="link_register">
+                        <span><i class="fas fa-user-circle"></i></span>
+                       <a href="register.html">Register</a> 
+                    </div>
+                    <div class="link_login">
+                        <span><i class="fas fa-sign-in-alt"></i></span>
+                        <a href="login.html">Login</a> 
+                    </div>
                 </div>
-                
-                
-                <i class="material-icons menu" onclick="menu()";>menu</i>
-                <!-- <i class="material-icons menu2">menu</i> -->
-            </div>
-            <div class="dropdown">                
-                <a href="" >Home</a>
-                <a href="./index.html#New">New</a>
-                <a href="shop.html"> Shop <i class="fas fa-caret-down"></i> </a>
-                <a href="catalogue.html" class="active">Catalogue</a>
-                <a href="about_us">About Us</a>
-                <a href="contact_us.html">Contact Us</a>
-            </div>
-        </nav>
-        <!--x----- NAVIGATION MENU SECTION -----x-->
+                 <!--x----- LOGIN AND REGISTER SECTION -----x-->
+        
+                <!-------- HORIZONTAL LINE -------->
+                <span class="horizontal__line"></span>
+                <!--x----- HORIZONTAL LINE -----x-->
+        
+                <!-------- LOGO SECTION -------->
+                <div class="logo__container">
+                    <span class="input__search">
+                    <input type="text" name="" id="" class="search__input" placeholder="I'm shopping for ...">
+                    <span class="search__icon"><i class="fas fa-search "></i></span> 
+                    </span>
+                    <div class="icons">
+                       <span class="cart"> <i class="fas fa-cart-plus"></i></span> 
+                       <span class="heart"><i class="far fa-heart"></i></span> 
+                       <span class="whatsapp"><i class="fab fa-whatsapp"></i></span> 
+                    </div>
+                </div>
+                <!--x----- LOGO SECTION -----x-->
+        
+                <!-------- NAVIGATION MENU SECTION -------->
+                <nav>
+                    <div class="content"> 
+                        <a href="./index.html">
+                            <img src="./assets/images/home/luxeBeautyHouseLogo.jpg" class="luxeBeautyHouseLogo" alt="LuxeBeauty House Logo">   
+                        </a>
+                        
+                        <div class="links">
+                                <button class="link__title">
+                                    <a href="./index.html" class="active menu__link">Home</a>
+                                </button>
+        
+                            <button class="link__title">
+                                <a href="./index.html#New" class="menu__link">New</a>
+                            </button>
+        
+                            <!--------  DROPDOWN MENU LIST -------->
+                            <div class="shop">
+                                <button class="link__title">Shop <i class="fas fa-caret-down"></i> </button>
+                                <ul>
+                                    <li><a href="#">Eyes</a></li>
+                                    <li><a href="#">Lips</a></li>
+                                    <li><a href="#">Loose Settings</a></li>
+                                    <li><a href="#">Tools</a></li>
+                                </ul>
+                            </div>            
+                            <!--------  DROPDOWN MENU LIST -------->
+                           
+                            <button class="link__title">
+                                <a href="catalogue.html" class="menu__link">Catalogue</a>
+                            </button>
+        
+                            <button class="link__title">
+                                <a href="about_us.html" class="menu__link">About Us</a>
+                            </button>
+        
+                            <button class="link__title">
+                                <a href="contact_us.html" class="menu__link">Contact Us</a>
+                            </button>                    
+                        </div>              
+                        <i class="material-icons menu" onclick="menu()";>menu</i>
+                    </div>
+                    <div class="dropdown">                
+                        <a href="" class="active">Home</a>
+                        <a href="./index.html#New">New</a>
+                        <a href="shop.html"> Shop <i class="fas fa-caret-down"></i> </a>
+                        <a href="catalogue.html">Catalogue</a>
+                        <a href="about_us">About Us</a>
+                        <a href="contact_us.html">Contact Us</a>
+                    </div>
+                </nav>
+                <!--x----- NAVIGATION MENU SECTION -----x-->
 
          <!-------- PRODUCT DETAILS SECTION -------->
     <section class="product__container">

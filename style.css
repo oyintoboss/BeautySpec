@@ -303,29 +303,102 @@ nav .content .links{
     grid-auto-columns: minmax(min-content, 195px);
 }
 
-nav .content .links .active{
+/*--------  DROPDOWN MENU LIST --------*/
+.shop{
+    position: relative;
+}
+
+.link__title{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    background-color: var(--light);
+}
+
+.shop > .link__title:hover{
+    background-color: var(--buttonbackground);
+    color: var(--light);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1.2rem;
+    padding-bottom: 2.84rem;
+}
+
+.shop ul{
+    position: absolute;
+    background: white;
+    margin-top: .7rem;
+    width: 12rem;
+    height: 12rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+}
+
+.shop ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.shop li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop li:hover{
+    background-color: rgba(218, 179, 191);
+}
+
+.shop button:hover + ul{
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0px);
+}
+
+.shop button:focus + ul{
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0px);
+}
+
+
+/*--x-----  DROPDOWN MENU LIST -----x--*/
+
+.link__title .active{
     background-color: var(--dark);
     color: var(--light);
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 3.8rem;
+    padding-top: 1.7rem;
+    padding-bottom: 2.409rem;
 }
 
-nav .content .links a:hover{
+.link__title .menu__link:hover{
     background-color: var(--buttonbackground);
     color: var(--light);
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 1.7rem;
-    padding-bottom: 3.1rem; 
+    padding-bottom: 2.409rem;
 }
+
 /*--x----- NAVIGATION MENU LINK SECTION -----x--*/
 
 /*-------- NAVIGATION MENU DROPDOWN SECTION --------*/
 nav .dropdown{
     display: none;  
-    background-color: var(--darkmatter);
+    background-color: var(--buttonbackground);
     text-align: center;
 }
 /*-------- NAVIGATION MENU DROPDOWN SECTION --------*/
@@ -340,8 +413,8 @@ nav .dropdown a{
 
 /*-------- NAVIGATION MENU LINK SECTION --------*/
 nav .dropdown a:hover{
-    color: var(--greenapple);
-    background-color: var(--greyapple);
+    color: var(--buttonbackground);
+    background-color: var(--light);
 }
 /*--x----- NAVIGATION MENU LINK SECTION -----x--*/
 
