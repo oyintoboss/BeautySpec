@@ -334,7 +334,7 @@ nav{
     grid-area: 3/1/4/5;
     padding: 0;
     margin: 0;
-    grid-template-rows: minmax(min-content, 100px) min-content;
+    grid-template-rows: minmax(min-content, 50px) min-content;
     position: sticky;
     top: 0;
 }
@@ -3537,6 +3537,28 @@ margin-bottom: 1rem;
 
 /*--x----- PAYMENT PAGE SECTION -----x--*/
 
+/*-------- TOP SCROLL SECTION --------*/
+#btn__scroll{
+    /* display: none; */
+    position: fixed;
+    bottom: 40px;
+    right: 5px;
+    font-size: 30px;
+    background: var(--dark);
+    color: white;
+    padding: 7px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.top__scroll:hover, #btn__scroll:hover{
+    background: var(--buttonbackground);
+    transition: .5s;
+}
+
+/*--x----- TOP SCROLL SECTION -----x--*/
+
 }
 
 /*--x----- MEDIA QUERIES FOR 700PX -----x--*/
@@ -4928,6 +4950,28 @@ margin-right: 1rem;
 }
 
 /*--x----- PAYMENT PAGE SECTION -----x--*/
+
+/*-------- TOP SCROLL SECTION --------*/
+#btn__scroll{
+    /* display: none; */
+    position: fixed;
+    bottom: 40px;
+    right: 5px;
+    font-size: 20px;
+    background: var(--dark);
+    color: white;
+    padding: 7px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.top__scroll:hover, #btn__scroll:hover{
+    background: var(--buttonbackground);
+    transition: .5s;
+}
+
+/*--x----- TOP SCROLL SECTION -----x--*/
 
 }
 
