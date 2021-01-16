@@ -2,14 +2,87 @@
 @import url("cssvariable.css");
 /*-------- CSS VARIABLE LINK --------*/
 
-/*-------- CSS FONTS LINK --------*/
-@import url("fonts.css");
-/*-------- CSS FONTS LINK --------*/
-
 /*--------  --------*/
 /*--x-----  -----x--*/
 
 /*-------- UNIVERSAL CLASSES --------*/
+
+/*-------- SVG LINK --------*/
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?95m1no');
+    src:  url('fonts/icomoon.eot?95m1no#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?95m1no') format('truetype'),
+      url('fonts/icomoon.woff?95m1no') format('woff'),
+      url('fonts/icomoon.svg?95m1no#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-caret-down-solid:before {
+    content: "\e900";
+    font-size: 1.4rem;
+  }
+  .icon-cart-plus-solid:before {
+    content: "\e901";
+  }
+  .icon-chevron-up-solid:before {
+    content: "\e902";
+  }
+  .icon-envelope-regular:before {
+    content: "\e903";
+    font-size: 1.7rem;
+  }
+  .icon-facebook-f-brands:before {
+    content: "\e904";
+    font-size: 1.7rem;
+  }
+  .icon-heart-regular:before {
+    content: "\e905";
+    font-size: 1.7rem;
+  }
+  .icon-instagram-brands:before {
+    content: "\e906";
+    font-size: 1.7rem;
+  }
+  .icon-search-solid:before {
+    content: "\e907";
+    font-size: 1.7rem;
+  }
+  .icon-sign-in-alt-solid:before {
+    content: "\e908";
+  }
+  .icon-twitter-brands:before {
+    content: "\e909";
+    font-size: 1.7rem;
+  }
+  .icon-user-solid:before {
+    content: "\e90a";
+  }
+  .icon-whatsapp-brands:before {
+    content: "\e90b";
+    font-size: 1.7rem;
+  }
+  
+  
+/*--x----- SVG LINK -----x--*/
 
 .fas{
     font-size: 2rem;
@@ -87,7 +160,7 @@ label{
 }
 
 /*-------- TOP SCROLL SECTION --------*/
-#btn__scroll i{
+#btn__scroll{
     /* display: none; */
     position: fixed;
     bottom: 40px;
@@ -101,7 +174,7 @@ label{
 
 }
 
-.top__scroll i:hover, #btn__scroll i:hover{
+.top__scroll:hover, #btn__scroll:hover{
     background: var(--buttonbackground);
     transition: .5s;
 }
@@ -243,8 +316,8 @@ border-right: none;
     margin-top: 3.8rem;
 }
 
-.icons > .cart, .icons > .heart, .icons > .whatsapp{
-    margin-right: .8rem;
+.icons > span{
+    font-size: 1.6rem;
 }
 
 /*--x----- LOGO SECTION -----x--*/
@@ -275,7 +348,7 @@ nav .content{
 
 /*-------- NAVIGATION MENU CONTENT ICON --------*/
 nav .content .menu{
-    font-size: 4rem;
+    font-size: 2.5rem;
     display: none;
 }
 
@@ -292,7 +365,7 @@ nav .content .menu{
 /*-------- NAVIGATION MENU CONTENT ICON 2 --------*/
 nav .content .menu2{        
     display: grid;
-    font-size: 4rem;
+    font-size: 2.5rem;
 }
 /*--x----- NAVIGATION MENU CONTENT ICON 2 -----x--*/
 
@@ -640,20 +713,27 @@ nav .dropdown a:hover{
     place-items: center;
     margin-top: .5rem;
     margin-right: .5rem;
+    font-size: 2rem;
+}
+
+.fav__product:hover{
+    box-shadow: var(--shadow);
 }
 /*--x----- HEART ICON -----x--*/
 
 /*-------- SHOPPING CART ICON --------*/
 .cart__product{
     grid-area: 8/8/9/9;
-    margin-top: 12.8rem;
-}
-
-.cart__product > i{
-    padding: .5rem;
-    margin-right: .5rem;
+    margin-top: 12.5rem;
+    font-size: 2rem;
     border: 1px solid black; 
     border-radius: 34px 34px;
+    padding: .5rem;
+    margin-right: .5rem;
+}
+
+.cart__product:hover{
+    box-shadow: var(--shadow);
 }
 
 .back{
@@ -2294,7 +2374,7 @@ margin-bottom: 1rem;
 
 /*-------- NAVIGATION MENU SECTION --------*/
 nav .content .menu{
-    font-size: 4rem;
+    font-size: 2.5rem;
     display: initial;
 }
 
@@ -3540,7 +3620,7 @@ margin-bottom: 1rem;
     
     /*-------- NAVIGATION MENU SECTION --------*/
     nav .content .menu{
-        font-size: 4rem;
+        font-size: 2.5rem;
         display: initial;
     }
     
