@@ -218,6 +218,10 @@ label{
     text-decoration: none;
 }
 
+.email__link{
+    font-size: 1.3rem;
+}
+
 /*--x----- ACCOUNT CONTAINER SECTION -----x--*/
 
 /*-------- HORIZONTAL LINE --------*/
