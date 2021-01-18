@@ -1083,6 +1083,7 @@ nav .dropdown a:hover{
 .create:hover{
     background-color: white;
     border: 2px solid var(--buttonbackground);
+    color: var(--buttonbackground);
 }
 
 .sign__in:hover{
@@ -1160,6 +1161,7 @@ nav .dropdown a:hover{
     width: 19.5rem;
     font-size: 1rem;
     font-weight: bold;
+    color: var(--light);
     background-color: var(--buttonbackground);
     border: 2px solid var(--buttonbackground);
 }
@@ -1189,11 +1191,13 @@ nav .dropdown a:hover{
 .create__register:hover{
     background-color: var(--buttonbackground);
     border: 2px solid var(--buttonbackground);
+    color: var(--light);
 }
 
 .sign__in__register:hover{
     background-color: white;
     border: 2px solid var(--buttonbackground);
+    color: var(--buttonbackground);
 }
 /*--x----- REGISTER PAGE SECTION -----x--*/
 
