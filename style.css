@@ -1280,6 +1280,7 @@ nav .dropdown a:hover{
     grid-template-rows: repeat(6,1fr);
     grid-column-gap: 4.17rem;
     grid-row-gap: 2.5rem;
+    height: 34rem;
 }
 
 .image__box > img{
@@ -1290,6 +1291,7 @@ nav .dropdown a:hover{
 
 .image__box > .image__details{
     grid-area: 5/1/7/7;
+    height: 1rem;
     padding: 0;
     margin: 0;
 }
