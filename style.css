@@ -1510,6 +1510,27 @@ nav .dropdown a:hover{
     margin: 0;
 }
 
+.checkout__images .small__images__2{
+    display: grid;
+    grid-area: 2/1/3/2;
+    place-items: center;
+    height: 9rem;
+    width: 49rem;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: .2rem;
+    margin: 0;
+    padding: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--buttonbackground);
+}
+
+.small__images__2 > img{
+    width: 9rem;
+    padding: 0;
+    margin: 0;
+}
+
 /*--x----- CHECK OUT IMAGES SECTION -----x--*/
 
 /*-------- CHECK OUT IMAGES INFORMATION SECTION --------*/
@@ -1545,15 +1566,20 @@ nav .dropdown a:hover{
     margin: 0;
 }
 
-.out__of__stock__text{
+.email__out__of__stock{
     color: red;
 }
 
-.email__details{
-    width: 20rem;
+/* .email__details{
+    width: 10rem;
     font-size: 1rem;
+    padding-left: 2rem;
     padding: 0;
     margin: 0;
+} */
+
+.email__details::placeholder{
+    /* padding-left: 2rem; */
 }
 
 .add__to__basket{
@@ -3058,6 +3084,19 @@ nav .content .links{
     margin: 0;
 }
 
+.checkout__info__2{
+    grid-area: 2/1/3/2;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-row-gap: .1rem;
+    padding: 0;
+    height: 32rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    margin: 0;
+}
+
 .checkout__price, .checkout__instock{
     font-size: 1.4rem;
 }
@@ -3082,10 +3121,15 @@ nav .content .links{
 }
 
 .email__details{
-    width: 20rem;
+    /* width: 10rem;
     font-size: 1rem;
+    padding-left: 2rem;
     padding: 0;
-    margin: 0;
+    margin: 0; */
+}
+
+.email__details::placeholder{
+    padding-left: 2rem;
 }
 
 .add__to__basket{
@@ -4292,6 +4336,21 @@ margin-bottom: 1rem;
     background-color: var(--buttonbackground);
 }
 
+.checkout__images .small__images__2{
+    display: grid;
+    grid-area: 2/1/3/2;
+    place-items: center;
+    height: 6rem;
+    width: 26.3rem;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: .2rem;
+    margin: 0;
+    padding: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--buttonbackground);
+}
+
 .small__images > img{
     width: 5rem;
     padding: 0;
@@ -4332,16 +4391,18 @@ margin-bottom: 1rem;
     margin: 0;
 }
 
-.out__of__stock__text{
-    color: red;
+.email__details{
+    /* width: 20rem;
+    font-size: 1rem;
+    padding-left: 2rem;
+    padding: 0;
+    margin: 0; */
 }
 
-.email__details{
-    width: 20rem;
-    font-size: 1rem;
-    padding: 0;
-    margin: 0;
+.email__details::placeholder{
+    padding-left: 2rem;
 }
+
 
 .add__to__basket{
     height: 3.4rem;
