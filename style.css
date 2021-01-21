@@ -374,6 +374,7 @@ nav .content{
 nav .content .menu{
     font-size: 2.5rem;
     display: none;
+    color: var(--purple__colour);
 }
 
 /*-------- FONT-AWESOME ICON SIZE --------*/
@@ -807,7 +808,7 @@ nav .dropdown a:hover{
 
 /*-------- PRODUCT CATEGORY CONTAINER --------*/
 .prod__category__container{
-    grid-area: 6/1/7/6;
+    grid-area: 7/1/8/6;
     display: grid;
     grid-template-rows: minmax(min-content, 1rem) min-content;
     grid-gap: .2rem;   
@@ -942,11 +943,28 @@ nav .dropdown a:hover{
 
 /*-------- SLIDER SECTION --------*/
 .slider{
-    grid-area: 8/1/9/6;
+    /* grid-area: 8/1/9/6; */
+    grid-area: 6/1/7/6;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: .2rem;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
+}
+
+.newproduct__container__2{
+    grid-area: 9/1/10/6;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: .2rem;
+    border: 2px solid blue;
+}
+
+.newproduct__container__3{
+    grid-area: 10/1/11/6;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: .2rem;
+    border: 2px solid greenyellow;
 }
 
 .newproduct__title__2{
@@ -965,7 +983,7 @@ nav .dropdown a:hover{
 
 /*-------- FOOTER CONTAINER --------*/
 .footer__container{
-    grid-area: 7/1/8/5;
+    grid-area: 8/1/9/5;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     align-content: center;
