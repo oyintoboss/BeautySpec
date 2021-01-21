@@ -202,6 +202,10 @@ label{
 
 /*--x----- UNIVERSAL CLASSES -----x--*/
 
+.asterik{
+    color: var(--required__field);
+}
+
 .wrapper{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -321,16 +325,11 @@ border-right: none;
     padding-left: .5rem;
 }
 
-.search__input:focus {
-    border-bottom-color: var(--purple__colour);
-}
-
 .search__input::placeholder{
     margin: 2rem;
     padding-left: .6rem;
     padding-bottom: 2rem;
     font-size: 1.2rem;
-    color: var(--purple__colour);
 }
 
 .icons{
@@ -588,7 +587,7 @@ nav .dropdown a:hover{
 
 .shop__now:hover{
     background-color: var(--light);
-    color: var(--purple__colour);
+    color: var(--buttonbackground);
 }
 /*--x----- SHOP NOW BUTTON -----x--*/
 
@@ -622,7 +621,7 @@ nav .dropdown a:hover{
 
 .shop__categories:hover{
     background-color: var(--light);
-    color: var(--purple__colour);
+    color: var(--buttonbackground);
 }
 /*--x----- SHOP CATEGORIES BUTTON -----x--*/
 
@@ -1728,14 +1727,14 @@ outline: none;
     grid-column-gap: .1rem;
     height: 40rem;
     padding: 0;
-    width: 20rem;
+    width: 12rem;
     margin: 0;
 }
 
 .checkout__images > img{
     grid-area: 1/1/2/2;
     width: 100%;
-    height: 27.6rem;
+    height: 23rem;
     padding: 0;
     margin: 0;
 }
@@ -1797,8 +1796,15 @@ outline: none;
     margin: 0;
 }
 
-.checkout__price, .checkout__instock{
+.checkout__price{
     font-size: 1.4rem;
+    color: var(--purple__colour);
+}
+
+.checkout__instock{
+    font-size: 1.4rem;
+    color: var(--greenapple);
+    font-weight: bold;
 }
 
 .checkout__instock{
@@ -1826,7 +1832,7 @@ outline: none;
 
 .txt__quantity{
     font-size: 1.4rem;
-    margin-left: .8rem;
+    margin-right: 1rem;
 }
 
 .email__out__of__stock{
@@ -1899,6 +1905,28 @@ outline: none;
     background-color: var(--light);
     border: 1px solid var(--purple__colour);
     color: var(--purple__colour);
+}
+
+.btn__check__out{
+    width: 15rem;
+    height: 3.4rem;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: var(--light);
+    border: 1px solid var(--purple__colour);
+    color: var(--dark);
+    margin-right: 2rem;
+}
+
+.btn__check__out:hover{
+    width: 15rem;
+    height: 3.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: var(--purple__colour);
+    border: 1px solid var(--purple__colour);
+    color: var(--light);
 }
 
 /*--x----- INSTOCK PRODUCT -----x--*/
@@ -2162,15 +2190,24 @@ td{
 
 /*-------- DELETE ICON --------*/
 .fa-trash-alt{
-    text-align: right;
-    margin-left: 16rem; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
     font-size: 1rem;
 }
 
-.mink__lashes{
-    text-align: right;
-}
 /*--x----- DELETE ICON -----x--*/
+
+/*-------- TABLE IMAGE --------*/
+.table__image{
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*--x----- TABLE IMAGE -----x--*/
 
 /*--x----- TABLE CONTAINER SECTION -----x--*/
 
@@ -2225,7 +2262,10 @@ td{
     width: 15rem;
     vertical-align: middle;
     height: 3.4rem;
+    background-color: var(--light);
     font-weight: bold;
+    cursor: pointer;
+    border: 2px solid var(--purple__colour);
     font-size: 1rem;
 }
 
@@ -2249,6 +2289,7 @@ td{
     display: grid;
     grid-template-rows: repeat(6,1fr);
     grid-column-gap: .1rem;
+    height: 30rem;
     padding: 1rem;
 }
 
@@ -2275,13 +2316,22 @@ hr{
 .shipping__address{
     text-align: right;
     display: grid;
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
     grid-column-gap: .2rem;
 }
 
 .shipping__title__2{
     margin-top: 2rem;
 }
+
+.shipping__title__2 .Palette__line{
+    margin-bottom: 2rem;
+}
+
+.shipping__others__2 .Palette__line{
+    margin-bottom: 2rem;
+}
+
 
 .shipping__others__2{
     margin-top: 2rem;
@@ -3433,7 +3483,6 @@ nav .content .links{
 
 .txt__quantity{
     font-size: 1.4rem;
-    margin-left: .8rem;
 }
 
 .btn__instock{
@@ -3586,13 +3635,10 @@ td{
 
 /*-------- DELETE ICON --------*/
 .fa-trash-alt{
-    text-align: right;
-    margin-left: 16rem; 
+    text-align: center;
+    vertical-align: middle;
 }
 
-.mink__lashes{
-    text-align: right;
-}
 /*--x----- DELETE ICON -----x--*/
 
 /*--x----- TABLE CONTAINER SECTION -----x--*/
@@ -3646,6 +3692,7 @@ td{
     width: 15rem;
     vertical-align: middle;
     height: 3.4rem;
+    background-color: var(--light);
     font-weight: bold;
     font-size: 1rem;
 }
@@ -3684,7 +3731,7 @@ td{
 .shipping__address{
     text-align: right;
     display: grid;
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
     grid-column-gap: .2rem;
 }
 
@@ -4677,7 +4724,6 @@ margin-bottom: 1rem;
 
 .txt__quantity{
     font-size: 1.4rem;
-    margin-left: .8rem;
 }
 
 /*-------- INSTOCK PRODUCT --------*/
@@ -4717,6 +4763,28 @@ margin-bottom: 1rem;
     background-color: var(--light);
     border: 1px solid var(--purple__colour);
     color: var(--purple__colour);
+}
+
+.btn__check__out{
+    width: 15rem;
+    height: 3.4rem;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: var(--light);
+    border: 1px solid var(--purple__colour);
+    color: var(--dark);
+    margin-right: 2rem;
+}
+
+.btn__check__out:hover{
+    width: 15rem;
+    height: 3.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: var(--purple__colour);
+    border: 1px solid var(--purple__colour);
+    color: var(--light);
 }
 
 /*--x----- INSTOCK PRODUCT -----x--*/
@@ -4926,13 +4994,10 @@ td{
 
 /*-------- DELETE ICON --------*/
 .fa-trash-alt{
-    text-align: right;
-    margin-left: 1rem; 
+    text-align: center;
+    vertical-align: middle;
 }
 
-.mink__lashes{
-    text-align: right;
-}
 /*--x----- DELETE ICON -----x--*/
 
 /*--x----- TABLE CONTAINER SECTION -----x--*/
@@ -4986,6 +5051,7 @@ td{
     width: 15rem;
     vertical-align: middle;
     height: 3.4rem;
+    background-color: var(--light);
     font-weight: bold;
     font-size: 1rem;
 }
@@ -5027,7 +5093,7 @@ td{
 .shipping__address{
     text-align: right;
     display: grid;
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
     grid-column-gap: .2rem;
 }
 
