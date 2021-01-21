@@ -1297,10 +1297,7 @@ outline: none;
     grid-area: 4/1/5/5;
     grid-template-columns: repeat(3,1fr);
     margin: 0;
-    /* place-items: center; */
     padding: 0;
-    /* margin-left: 6rem;
-    margin-right: 5rem; */
     grid-gap: 2rem;
 }
 
