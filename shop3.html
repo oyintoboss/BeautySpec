@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LuxeBeautyHouse</title>
 
@@ -69,7 +70,7 @@ rel="stylesheet">
                         
                         <div class="links">
                                 <button class="link__title">
-                                    <a href="./index.html" class="active menu__link">Home</a>
+                                    <a href="./index.html" class="menu__link">Home</a>
                                 </button>
         
                             <!-- <button class="link__title">
@@ -78,12 +79,12 @@ rel="stylesheet">
         
                             <!--------  DROPDOWN MENU LIST -------->
                             <div class="shop">
-                                <button class="link__title">Shop <i class="fas fa-caret-down"></i> </button>
+                                <button class="active link__title">Shop <i class="fas fa-caret-down"></i> </button>
                                 <ul>
-                                    <li><a href="#">Eyes</a></li>
-                                    <li><a href="#">Lips</a></li>
-                                    <li><a href="#">Loose Settings</a></li>
-                                    <li><a href="#">Tools</a></li>
+                                    <li><a href="./shop.html">Eyes</a></li>
+                                    <li><a href="./shop.html">Lips</a></li>
+                                    <li><a href="./shop.html">Loose Settings</a></li>
+                                    <li><a href="./shop.html">Tools</a></li>
                                 </ul>
                             </div>            
                             <!--------  DROPDOWN MENU LIST -------->
@@ -113,110 +114,91 @@ rel="stylesheet">
                 </nav>
                 <!--x----- NAVIGATION MENU SECTION -----x-->
 
-         <!-------- PRODUCT DETAILS SECTION -------->
+
+        <!-------- PRODUCT DETAILS SECTION -------->
     <section class="product__container">
-        <h1 class="stock__title">
-       
-        <span class="checkout__title"> CHECK OUT</span>
-        <a href="./catalogue.html" class="back"> &#60; back </a>
+        <h1 class="product__title">
+            SHOP OUR PRODUCTS
         </h1>
-
-<div class="checkout__container">
-    <div class="checkout__images">
-            <img src="assets/images/shop/shop1.jpg" alt="" class="big__images">
-        <div class="small__images">
-            <img src="assets/images/stock/stock6.jpg" alt="">
-            <img src="assets/images/stock/stock4.jpg" alt="">
-            <img src="assets/images/stock/stock3.jpg" alt="">
-            <img src="assets/images/stock/stock1.jpg" alt="">
-        </div>
-    </div>
-    
-    <div class="checkout__info">
-        <h1 class="checkout__product__name">Matte Liquid LipStick</h1>
-        <div class="checkout__price">R 99</div>
-        <div class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
-        <div class="checkout__instock">In Stock</div>       
-        
-        <div class="input__quantity">
-            <input type="number" min="1" value="1" class="input__number">
-            <span class="txt__quantity">QUANTITY</span>
-        </div>
-
-        <div class="btn__instock">
-            <a href="./shoppingcart.html">
-            <input type="button" class="btn__stock" value="ADD TO BASKET">
-        </a>
-            <input type="button" class="btn__stock" value="CHECK OUT">
-        </div>
-       
-
-        <div class="social__media">
-            <a href="#"><i class="fab fa-instagram-square"></i></a>
-            <a href="#"><i class="fab fa-facebook-square"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"> <i class="fab fa-pinterest"></i> </a>
-            <a href="#"><i class="far fa-envelope"></i></a>
-        </div>
-    </div>
-    
+        <div class="product__filter">
+<div class="filter__title">
+     Filter by:  
+     <span>
+        <a href="./shop3.html"> <i class="fas fa-list-ul"></i> Product Categories </a>
+   
+        <a href="./shop.html"> <i class="fas fa-list"></i> Products </a>
+    </span>
 </div>
-    </section>
-        <!--x----- PRODUCT DETAILS SECTION -----x-->
-
-        <!-------- RELATED PRODUCTS SECTION -------->
-    <section class="related__product__container">
-        <h1 class="product__title">Related Products</h1>
-
-        <div class="related__images">
-            <div class="related__images__box">
-                <img src="assets/images/shop/shop5.jpg" alt="">
-                <div class="related__images__details">
-                    <div class="related__images__info">
-                        8pcs Black Travel Makeup Brush
-                    </div>
-                    <div class="related__images__price">
-                        R 99
-                    </div>
-                </div>
-            </div>
-            <div class="related__images__box">
+</div>
+        <div class="catalogue__images__container">
+            <div class="image__box">
                 <img src="assets/images/shop/shop1.jpg" alt="">
-                <div class="related__images__details">
-                    <div class="related__images__info">
-                        8pcs Black Travel Makeup Brush
-                    </div>
-                    <div class="related__images__price">
-                        R 40
-                    </div>
+
+                <span class="fav__shop icon-heart-regular"></span>
+                <span class="cart__shop icon-cart-plus-solid"></span>
+
+                <div class="image__details">
+                    <a href="#">Mink Lashes</a> 
+                    <span>R99</span>
                 </div>
+
             </div>
-            <div class="related__images__box">
+            <div class="image__box">
                 <img src="assets/images/shop/shop2.jpg" alt="">
-                <div class="related__images__details">
-                    <div class="related__images__info">
-                        8pcs Black Travel Makeup Brush
-                    </div>
-                    <div class="related__images__price">
-                        R 908
-                    </div>
+                <span class="fav__shop icon-heart-regular"></span>
+                <span class="cart__shop icon-cart-plus-solid"></span>
+                <div class="image__details">
+                    <a href="productpage__in__stock.html" class="product__name">Mink Lashes
+                        <span class="product__star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i> 
+                        </span>
+                    </a>
+                    <span>R400</span>
                 </div>
             </div>
-            <div class="related__images__box">
+            <div class="image__box">
+                <img src="assets/images/shop/shop3.jpg" alt="">
+                <span class="fav__shop icon-heart-regular"></span>
+                <span class="cart__shop icon-cart-plus-solid"></span>
+                <div class="image__details">
+                    <a href="#">Matte Liquid Lipstick</a>
+                    <span>R908</span>
+                </div>
+            </div>
+            <div class="image__box">
                 <img src="assets/images/shop/shop4.jpg" alt="">
-                <div class="related__images__details">
-                    <div class="related__images__info">
-                        8pcs Black Travel Makeup Brush
-                    </div>
-                    <div class="related__images__price">
-                        R 347
-                    </div>
+                <span class="fav__shop icon-heart-regular"></span>
+                <span class="cart__shop icon-cart-plus-solid"></span>
+                <div class="image__details">
+                    <a href="productpage__out__of__stock.html">Glam Squad Eyeshadow</a>
+                    <span>R347</span>
+                </div>
+            </div>
+            <div class="image__box">
+                <img src="assets/images/shop/shop5.jpg" alt="">
+                <span class="fav__shop icon-heart-regular"></span>
+                <span class="cart__shop icon-cart-plus-solid"></span>
+                <div class="image__details">
+                    <a href="#">Loose Setting Powder</a>
+                    <span>R89.45</span>
+                </div>
+            </div>
+            <div class="image__box">
+                <img src="assets/images/shop/shop1.jpg" alt="">
+                <span class="fav__shop icon-heart-regular"></span>
+                <span class="cart__shop icon-cart-plus-solid"></span>
+                <div class="image__details">
+                    <a href="#">Mink Lashes</a>
+                    <span>R99</span>
                 </div>
             </div>
         </div>
-
     </section>
-        <!--x----- RELATED PRODUCTS SECTION -----x-->
+        <!-------- PRODUCT DETAILS SECTION -------->
 
  <!-------- HORIZONTAL LINE -------->
  <span class="horizontal__line__2"></span>
@@ -236,8 +218,8 @@ rel="stylesheet">
             <div class="column__2">
                 <h2>Information</h2>
                 <div class="info__2">
-                    <p><a href="information.html" class="delivery">Delivery Information</a></p>
-                    <p><a href="information.html" class="order">Order & Return</a></p>
+                    <p><a href="" class="delivery">Delivery Information</a></p>
+                    <p><a href="" class="order">Order & Return</a></p>
                 </div>
             </div>
             <div class="column__3">
@@ -252,15 +234,16 @@ rel="stylesheet">
     <!--x----- FOOTER SECTION -----x-->
 
     </div>
-    <!--x----- WRAPPER CONTAINER END -----x-->
+   <!--x----- WRAPPER CONTAINER END -----x-->
 
     <!-------- DROPDOWN JAVASCRIPT BEGIN  -------->
-   <script src="./dropdown.js"></script>  
-   <!--x----- WRAPPER CONTAINER END -----x-->
-  
-   <!-------- TOP SCROLL JAVASCRIPT BEGIN  -------->
-       <script src="./top__scroll.js">
-          </script>
-  <!--x----- TOP SCROLL JAVASCRIPT END -----x-->
+    <script src="./dropdown.js"></script>  
+    <!--x----- WRAPPER CONTAINER END -----x-->
+   
+    <!-------- TOP SCROLL JAVASCRIPT BEGIN  -------->
+        <script src="./top__scroll.js">
+           </script>
+   <!--x----- TOP SCROLL JAVASCRIPT END -----x-->
 </body>
+
 </html>
