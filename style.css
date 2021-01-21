@@ -948,7 +948,7 @@ nav .dropdown a:hover{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: .2rem;
-    /* border: 2px solid yellow; */
+    border: 2px solid yellow;
 }
 
 .newproduct__container__2{
