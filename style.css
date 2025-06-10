@@ -177,6 +177,30 @@ label{
     margin-top: 2rem;
 }
 
+/*-------- FEED BACK FORM TITLE SECTION ----------*/
+.feedback__title{
+    color: var(--darkgreen);
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+/*--XXXXXX------ FEED BACK FORM TITLE SECTION --------XXXXXX--*/
+
+/*-------- FEED BACK FORM SECTION ----------*/
+table tr th{
+    color: var(--darkgreen);
+    font-size: .988rem;
+    font-weight: 800;
+}
+
+table tr td a{
+    color: var(--purple__colour);
+    font-size: .8rem;
+    font-weight: 1500;
+    cursor: pointer;
+}
+/*--XXXXXX------ FEED BACK FORM SECTION --------XXXXXX--*/
+
+
 /*-------- TOP SCROLL SECTION --------*/
 #btn__scroll{
     /* display: none; */
@@ -942,7 +966,6 @@ nav .dropdown a:hover{
 
 /*-------- SLIDER SECTION --------*/
 .slider{
-    /* grid-area: 8/1/9/6; */
     grid-area: 6/1/7/6;
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -980,9 +1003,48 @@ nav .dropdown a:hover{
 
 /*-------- FOOTER SECTION --------*/
 
+/*-------- NOT FOOTER CONTAINER --------*/
+/* .product__container{
+    display: grid;
+    grid-area: 4/1/5/5;
+    grid-template-columns: repeat(3,1fr);
+    margin: 0;
+    padding: 0;
+    grid-gap: 2rem;
+} */
+.not__footer__container{
+    grid-area: 8/1/9/5;
+    display: grid;
+    /* grid-template-columns: repeat(4,1fr);
+    align-content: center;
+    place-items: center;
+    padding-bottom: 5rem;
+    margin-right: 6rem; */
+    grid-template-columns: repeat(3,1fr);
+    margin: 0;
+    padding: 0;
+    grid-gap: 2rem;
+}
+/*--x----- NOT FOOTER CONTAINER -----x--*/
+
+/*-------- MEGIB ENTERPRISES WORKERS SECTION ----------*/
+.megib__workers__container{
+    grid-area: 7/1/8/5;
+    display: grid;
+}
+
+.megib__team__Image{
+    width: 14rem;
+    height: 14rem;
+    border-image: round;
+    border-color: var(--greenapple);
+    border-image-width: 5rem;
+}
+/*--XXXXXX------ MEGIB ENTERPRISES WORKERS SECTION --------XXXXXX--*/
+
 /*-------- FOOTER CONTAINER --------*/
 .footer__container{
-    grid-area: 8/1/9/5;
+    grid-area: 9/1/10/5;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     align-content: center;
