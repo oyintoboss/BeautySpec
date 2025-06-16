@@ -177,6 +177,30 @@ label{
     margin-top: 2rem;
 }
 
+/*-------- FEED BACK FORM TITLE SECTION ----------*/
+.feedback__title{
+    color: var(--darkgreen);
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+/*--XXXXXX------ FEED BACK FORM TITLE SECTION --------XXXXXX--*/
+
+/*-------- FEED BACK FORM SECTION ----------*/
+table tr th{
+    color: var(--darkgreen);
+    font-size: .988rem;
+    font-weight: 800;
+}
+
+table tr td a{
+    color: var(--purple__colour);
+    font-size: .8rem;
+    font-weight: 1500;
+    cursor: pointer;
+}
+/*--XXXXXX------ FEED BACK FORM SECTION --------XXXXXX--*/
+
+
 /*-------- TOP SCROLL SECTION --------*/
 #btn__scroll{
     /* display: none; */
@@ -562,7 +586,7 @@ nav .dropdown a:hover{
     min-height: 35rem;
     height: 35rem;
     width: 100%;
-    background: url('./assets/images/home/banner__1.jpg');
+    background: url('./assets/images/home/banner__image__1.jpg');
     background-size: cover;
     background-position: center; 
     display: grid;
@@ -942,7 +966,6 @@ nav .dropdown a:hover{
 
 /*-------- SLIDER SECTION --------*/
 .slider{
-    /* grid-area: 8/1/9/6; */
     grid-area: 6/1/7/6;
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -980,9 +1003,48 @@ nav .dropdown a:hover{
 
 /*-------- FOOTER SECTION --------*/
 
+/*-------- NOT FOOTER CONTAINER --------*/
+/* .product__container{
+    display: grid;
+    grid-area: 4/1/5/5;
+    grid-template-columns: repeat(3,1fr);
+    margin: 0;
+    padding: 0;
+    grid-gap: 2rem;
+} */
+.not__footer__container{
+    grid-area: 8/1/9/5;
+    display: grid;
+    /* grid-template-columns: repeat(4,1fr);
+    align-content: center;
+    place-items: center;
+    padding-bottom: 5rem;
+    margin-right: 6rem; */
+    grid-template-columns: repeat(3,1fr);
+    margin: 0;
+    padding: 0;
+    grid-gap: 2rem;
+}
+/*--x----- NOT FOOTER CONTAINER -----x--*/
+
+/*-------- MEGIB ENTERPRISES WORKERS SECTION ----------*/
+.megib__workers__container{
+    grid-area: 7/1/8/5;
+    display: grid;
+}
+
+.megib__team__Image{
+    width: 14rem;
+    height: 14rem;
+    border-image: round;
+    border-color: var(--greenapple);
+    border-image-width: 5rem;
+}
+/*--XXXXXX------ MEGIB ENTERPRISES WORKERS SECTION --------XXXXXX--*/
+
 /*-------- FOOTER CONTAINER --------*/
 .footer__container{
-    grid-area: 8/1/9/5;
+    grid-area: 9/1/10/5;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     align-content: center;
@@ -2028,6 +2090,11 @@ grid-gap: 2rem;
     text-align: center;
 }
 
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
 /*--x----- ABOUT US PAGE -----x--*/
 
 /*-------- CONTACT US PAGE --------*/
@@ -2645,6 +2712,26 @@ margin-bottom: 1rem;
     margin-top: 2rem;
 }
 
+.download__more__btn{
+    display: grid;
+    grid-area: 5/2/6/3;
+    text-align: center;
+    background-color: var(--darkermatter);
+    color: white;
+    width: 10rem;
+    border-radius: 3rem;
+    height: 3rem;
+    place-items: center;
+    cursor: pointer;
+    font-weight: 550;
+}
+
+.download__more__btn:hover{
+    box-shadow: var(--greenapple);
+    background-color: white;
+    color: var(--darkermatter);
+}
+
 .button__2{
     display: grid;
     grid-area: 5/3/6/4;
@@ -2806,7 +2893,7 @@ nav .content .links{
     min-height: 26rem;
     height: 26rem;
     width: 100%;
-    background: url('./assets/images/home/banner__1.jpg');
+    background: url('./assets/images/home/banner__image__1.jpg');
     background-size: cover;
     background-position: center; 
     display: grid;
@@ -4082,7 +4169,7 @@ margin-bottom: 1rem;
         min-height: 18rem;
         height: 18rem;
         width: 100%;
-        background: url('./assets/images/home/banner__1.jpg');
+        background: url('./assets/images/home/banner__image__1.jpg');
         background-size: cover;
         background-position: center; 
         display: grid;
